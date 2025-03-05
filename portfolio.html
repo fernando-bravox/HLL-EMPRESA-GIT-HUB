@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfolio - Sailor Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Sailor
+  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="portfolio-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename d-flex align-items-center">
+          <img src="assets/img/hll.jpeg" alt="Logo HLL" style="max-width: 150px; height: auto; margin-right: 10px;">
+          <span style="font-weight: bold; font-size: 16px; border-bottom: 2px solid red; padding-bottom: 3px;">
+              Líderes Imparables
+          </span>
+      </h1>
+      
+            </a>
+
+            <nav id="navmenu" class="navmenu">
+              <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li class="dropdown"><a href="about.html" class="active"><span>Nosotros</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="team.html">Equipo de trabajo</a></li>
+                   <!-- <li><a href="testimonials.html">Testimonials</a></li>-->
+                    
+                  </ul>
+                </li>
+                <li class="dropdown"><a href="services.html" class="active"><span>Servicios</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+               <!-- <li><a href="services.html">Servicios</a></li>-->
+               <ul>
+                <li><a href="services.html">Servicio Petroleros</a></li>
+                <li><a href="servicesconstruccion.html">Servicios De Construcción</a></li>
+               <!-- <li><a href="testimonials.html">Testimonials</a></li>-->
+                
+              </ul>
+          <li><a href="portfolio.html">Portafolio</a></li>
+         <!--  <li><a href="pricing.html">Precios</a></li>-->
+         <!-- <li><a href="blog.html">Blog</a></li>-->
+          <!-- <li><a href="contact.html">Contacto</a></li>-->
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="contact.html">Contactanos</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title light-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Portfolio</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Portfolio</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Título de la Sección -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Nuestro Trabajo</h2>
+        <p>Conoce nuestros proyectos y servicios en acción</p>
+      </div>
+    
+      <div class="container">
+    
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+    
+          <!-- Filtros (Para mostrar Servicios Petroleros o Construcción) -->
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">Todos</li>
+            <li data-filter=".filter-petroleros">Servicios Petroleros</li>
+            <li data-filter=".filter-construccion">Construcción</li>
+          </ul><!-- Fin de Filtros -->
+    
+          <!-- Contenedor de Imágenes -->
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+    
+            <!-- Imagen 1: Servicio Petrolero - Instalación de Cable Electrosumergible -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-petroleros">
+              <img src="assets/img/petroleos-3.jpg" class="img-fluid" alt="Instalación de Cable Electrosumergible">
+              <div class="portfolio-info">
+                <h4>Instalación de Cable Electrosumergible</h4>
+                <p>Garantizando seguridad y eficiencia.</p>
+                <a href="assets/img/petroleos-3.jpg" title="Instalación de Cable Electrosumergible" data-gallery="portfolio-gallery-petroleros" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div><!-- Fin de Item -->
+    
+            <!-- Imagen 2: Servicio Petrolero - Spooler (Enrollado de Cable) -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-petroleros">
+              <img src="assets/img/serv22.jpg" class="img-fluid" alt="Enrollado de Cable con Spooler">
+              <div class="portfolio-info">
+                <h4>Enrollado de Cable con Spooler</h4>
+                <p>Optimización de instalación y recuperación de cable.</p>
+                <a href="assets/img/serv22.jpg" title="Enrollado de Cable con Spooler" data-gallery="portfolio-gallery-petroleros" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div><!-- Fin de Item -->
+    
+            <!-- Imagen 3: Servicio Petrolero - Manejo y Transporte de Cable -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-petroleros">
+              <img src="assets/img/serv30.jpg" class="img-fluid" alt="Manejo y Transporte de Cable">
+              <div class="portfolio-info">
+                <h4>Manejo y Transporte de Cable</h4>
+                <p>Procesos seguros y eficientes en cada operación.</p>
+                <a href="assets/img/serv30.jpg" title="Manejo y Transporte de Cable" data-gallery="portfolio-gallery-petroleros" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div><!-- Fin de Item -->
+    
+            <!-- Imagen 4: Construcción - Edificaciones -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-construccion">
+              <img src="assets/img/serv28.jpg" class="img-fluid" alt="Edificaciones Terminadas">
+              <div class="portfolio-info">
+                <h4>Edificaciones</h4>
+                <p>Construcción de espacios funcionales y modernos.</p>
+                <a href="assets/img/serv28.jpg" title="Edificaciones" data-gallery="portfolio-gallery-construccion" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div><!-- Fin de Item -->
+    
+            <!-- Imagen 5: Construcción - Arquitectos e Ingenieros -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-construccion">
+              <img src="assets/img/serv29.jpg" class="img-fluid" alt="Arquitectos en Planificación">
+              <div class="portfolio-info">
+                <h4>Planificación de Proyectos</h4>
+                <p>Arquitectos e ingenieros supervisando cada detalle.</p>
+                <a href="assets/img/serv29.jpg" title="Planificación de Proyectos" data-gallery="portfolio-gallery-construccion" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div><!-- Fin de Item -->
+    
+            <!-- Imagen 6: Construcción - Obra en Proceso -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-construccion">
+              <img src="assets/img/servc2.jpg" class="img-fluid" alt="Obra en Construcción">
+              <div class="portfolio-info">
+                <h4>Obra en Construcción</h4>
+                <p>Edificaciones en desarrollo con altos estándares.</p>
+                <a href="assets/img/servc2.jpg" title="Obra en Construcción" data-gallery="portfolio-gallery-construccion" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div><!-- Fin de Item -->
+    
+          </div><!-- Fin de Contenedor de Imágenes -->
+    
+        </div>
+    
+      </div>
+    
+    </section><!-- /Sección de Nuestro Trabajo -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">HLL</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Km 1, Vía Lago Agrio, Sector Terranova.</p>
+            <p>El Coca, Orellana - Ecuador</p>
+            <p class="mt-3"><strong>Teléfono:</strong> <span>+593 98 800 4208</span></p>
+            <p><strong>E-mail:</strong> <span>herrerallori.cia@servicioshll.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100069891982623"><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Enlaces Útiles</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="about.html">Sobre Nosotros</a></li>
+            <li><a href="services.html">Servicios</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Horario de Atención</h4>
+          <ul>
+            <li><strong>Lunes - Viernes:</strong> 08:00 - 18:00</li>
+            <li><strong>Sábados:</strong> 09:00 - 13:00</li>
+            <li><strong>Domingos:</strong> Cerrado</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Recibe Información Exclusiva</h4>
+          <p>Déjanos tu correo para enviarte actualizaciones sobre nuestros servicios y novedades en la industria.</p>
+          
+          <form action="forms/newsletter.php" method="post" class="php-email-form">
+            <div class="newsletter-form">
+              <input type="email" name="email" placeholder="Ingresa tu correo" required>
+              <input type="submit" value="Enviar">
+            </div>
+            <div class="loading">Cargando...</div>
+            <div class="error-message">Hubo un error. Inténtalo de nuevo.</div>
+            <div class="sent-message">¡Tu correo ha sido registrado! Nos pondremos en contacto contigo.</div>
+          </form>
+        </div>
+        
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span></span> <strong class="px-1 sitename">HLL</strong> <span>Herrera Llori CIA. LTDA.</span></p>
+    </div>
+  
+  </footer>
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
