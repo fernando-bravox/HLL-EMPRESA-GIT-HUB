@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Servicios De Construcción</title>
+  <title>Servicios de Obra Civil.</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -27,59 +27,80 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Sailor
-  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <link href="assets/css/main2.css" rel="stylesheet">
+
+
+
 </head>
 
-<body class="services-page">
+<body class="index-page">
 
-  <header id="header" class="header d-flex align-items-center sticky-top">
+  <header id="header" class="header d-flex align-items-center justify-content-between sticky-top">
+<!-- Contenedor de botones -->
+<div id="button-container" class="d-flex align-items-center gap-2">
+  <button id="language-toggle" class="language-toggle btn btn-light p-2">
+    <i class="bi bi-globe"></i> <span id="language-text">ES</span>
+  </button>
+  <button id="theme-toggle" class="theme-toggle btn btn-light p-2">
+    <i id="theme-icon" class="bi bi-moon-fill"></i>
+  </button>
+</div>
+
+
+
+  
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      
+
+
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1 class="sitename d-flex align-items-center">
-          <img src="assets/img/hll.jpeg" alt="Logo HLL" style="max-width: 150px; height: auto; margin-right: 10px;">
-          <span style="font-weight: bold; font-size: 16px; border-bottom: 2px solid red; padding-bottom: 3px;">
-              Líderes Imparables
-          </span>
+            <img src="assets/img/hll2.png" alt="Logo HLL" style="max-width: 150px; height: auto; margin-right: 10px;">
+            <span id="lideres-texto" class="texto-lideres"
+                style="font-size: clamp(12px, 2vw, 18px); font-weight: bold; border-bottom: 2px solid red; padding-bottom: 3px; color: rgb(70, 64, 64);"
+                data-lang="es:Líderes Imparables,en:Unstoppable Leaders">
+                Líderes Imparables
+            </span>
+        
       </h1>
+      
+      
       
             </a>
 
             <nav id="navmenu" class="navmenu">
               <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li class="dropdown"><a href="about.html" class="active"><span>Nosotros</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                    <li><a href="team.html">Equipo de trabajo</a></li>
-                   <!-- <li><a href="testimonials.html">Testimonials</a></li>-->
-                    
-                  </ul>
+                <li><a href="index.html" data-lang="es:Inicio,en:Home">Inicio</a></li>   
+                             
+                <li><a href="about.html" ><span data-lang="es:Nosotros,en:About Us">Nosotros</i></a>
+                  <!--<ul>
+                  <li><a href="team.html" data-lang="es:Equipo de trabajo,en:Team">Equipo de trabajo</a></li>                    
+                  </ul>-->
                 </li>
-                <li class="dropdown"><a href="services.html" class="active"><span>Servicios</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <li class="dropdown"><a href="services.html"  ><span data-lang="es:Servicios,en:Services">Servicios</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                <!-- <li><a href="services.html">Servicios</a></li>-->
                <ul>
-                <li><a href="services.html">Servicio Petroleros</a></li>
-                <li><a href="servicesconstruccion.html">Servicios De Construcción</a></li>
+                <li><a href="services.html" data-lang="es:Servicio Petroleros,en:Oil Services">Servicio Petroleros</a></li>
+                <li><a href="servicesconstruccion.html" data-lang="es:Servicios de Obra Civil,en:Civil Works Services.">Servicios de Obra Civil.</a></li>
+                <li><a href="serviceselectricos.html" data-lang="es:Servicios Electrónicos,en:Electronic Services">Servicios Electrónicos</a></li>
+
                <!-- <li><a href="testimonials.html">Testimonials</a></li>-->
                 
               </ul>
-          <li><a href="portfolio.html">Portafolio</a></li>
-         <!--  <li><a href="pricing.html">Precios</a></li>-->
+          <li><a href="portfolio.html" data-lang="es:Portafolio,en:Portfolio">Portafolio</a></li>
+         <li><a href="políticassig.html" data-lang="es:Políticas,en:Policies">Políticas>Políticas</a></li>
+         <li><a href="noticeshll.html" data-lang="es:Noticias,en:News">Noticias</a></li>
+
          <!-- <li><a href="blog.html">Blog</a></li>-->
           <!-- <li><a href="contact.html">Contacto</a></li>-->
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="contact.html">Contactanos</a>
+      <a class="btn-getstarted" href="contact.html" data-lang="es:Contactanos,en:Contact Us">Contactanos</a>
+
+
 
     </div>
   </header>
@@ -89,116 +110,128 @@
     <!-- Page Title -->
     <div class="page-title light-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Servicios De Construcción</h1>
+        <h1 class="mb-2 mb-lg-0"data-lang="es:Área de Obra Civil,en:Civil Works Area">
+          Servicios de Obra Civil.</h1>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="index.html">Inicio</a></li>
-            <li class="current">Servicios</li>
+            <li><a href="index.html" data-lang="es:Inicio,en:Home">Inicio</a></li>
+            <li class="current" data-lang="es:Área de Obra Civil,en:Civil Works Area">
+              Servicios de Obra Civil.
           </ol>
         </nav>
       </div>
     </div><!-- End Page Title -->
-
-    <!-- Services Section -->
     <section id="services" class="services section">
 
-      <div class="container">
+      <h3 class="titulo-servicio text-center" data-lang="es:Área de Obra Civil,en:Civil Works Area">
+        Área de Obra Civil.</h3>
+      <div class="linea-roja"></div>
+    
+      <div class="row justify-content-center text-center">
 
-        <div class="row gy-4">
-          <div class="container section-title" data-aos="fade-up">
-            <h2>Servicios</h2>
-            <p>Servicios De Construcción<br></p><br>
-            <li><span>Nuestro <strong>Departamento de Facilidades</strong> lidera con experiencia y precisión la ejecución de proyectos de construcción.</span></li>
 
-          </div><!-- End Section Title -->
-
-           <!-- Obras Hidráulicas -->
-      <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-        <div class="service-item d-flex position-relative h-100">
-          <i class="bi bi-water icon flex-shrink-0"></i>
-          <div>
-            <h4 class="title"><a href="#" class="stretched-link">Obras Hidráulicas</a></h4>
-            <p class="description">Desarrollamos proyectos de infraestructura hidráulica para optimizar el uso del agua en diferentes sectores.</p>
+                  <div id="serviceModal" class="modal-overlay">
+                    <div class="modal-content">
+                      <span class="close-btn">&times;</span>
+                      <h2 id="modal-title"></h2>
+                      <p id="modal-description"></p>
+                    </div>
+                  </div>
+      <!-- Lista de Servicios (2 columnas) -->
+      <div class="col-md-10" data-aos="fade-up" data-aos-delay="150">
+        <div class="row">
+          <!-- Modal para Servicios de Construcción -->
+          <div id="serviceModalConstruccion" class="modal-overlay">
+            <div class="modal-content">
+              <span class="close-btn">&times;</span>
+              <h2 id="modal-title-construccion"></h2>
+              <p id="modal-description-construccion"></p>
+            </div>
           </div>
-        </div>
-      </div><!-- End Service Item -->
+          <!-- Sección: Facilidades de Construcción -->
 
-      <!-- Instalaciones de Riego -->
-      <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="service-item d-flex position-relative h-100">
-          <i class="bi bi-droplet icon flex-shrink-0"></i>
-          <div>
-            <h4 class="title"><a href="#" class="stretched-link">Instalaciones de Riego</a></h4>
-            <p class="description">Implementamos sistemas de riego eficientes para optimizar el aprovechamiento de los recursos hídricos.</p>
+          <!-- Obra Civil Petrolera y General -->
+          <div class="col-md-6 mb-3">
+            <div class="service-item" onclick="openModalConstruccion('mantenimiento')">
+              <div class="pic">
+                <img src="assets/img/facilidadconstruccion10.jpg" class="img-fluid" alt="Obra Civil Petrolera y General">
+              </div>
+              <div class="service-info">
+                <h4 data-lang="es:Obra Civil Petrolera y General,en:Petroleum and General Civil Works">
+                  Obra Civil Petrolera y General
+                </h4>
+                <span data-lang="es:Construcción, Dirección y Supervisión de Obra.,en:Construction, Management, and Supervision of Works.">
+                  Construcción de obras, edificaciones y adoquinado
+                 </span>
+                 <div class="icon"><i class="bi bi-bricks"></i></div> <!-- 🏗️ Icono de construcción -->
+              </div>
+            </div>
           </div>
-        </div>
-      </div><!-- End Service Item -->
-
-      <!-- Rehabilitaciones -->
-      <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-        <div class="service-item d-flex position-relative h-100">
-          <i class="bi bi-tools icon flex-shrink-0"></i>
-          <div>
-            <h4 class="title"><a href="#" class="stretched-link">Rehabilitaciones</a></h4>
-            <p class="description">Renovamos y modernizamos infraestructuras existentes, garantizando seguridad y funcionalidad.</p>
+  
+          <!-- Diseño Arquitectónico e Interiorismo -->
+          <div class="col-md-6 mb-3">
+            <div class="service-item" onclick="openModalConstruccion('electricas')">
+              <div class="pic">
+                <img src="assets/img/facilidadconstruccion8.jpg" class="img-fluid" alt="IDiseño Arquitectónico e Interiorismo">
+              </div>
+              <div class="service-info">
+                <h4 data-lang="es:Diseño y Planificación Arquitectónica e Interiorismo,en: Architectural Design and Planning & Interior Design">Diseño Arquitectónico e Interiorismo</h4>
+                <span data-lang="es:Diseño de planos, modelado 3D y ambientación de espacios.,en:Blueprint design, 3D modeling, and space ambiance.">
+                  Diseño de planos, modelado 3D y ambientación de espacios
+                </span>
+                <div class="icon"><i class="bi bi-tools"></i></div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div><!-- End Service Item -->
-
-      <!-- Construcción de Viviendas -->
-      <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-        <div class="service-item d-flex position-relative h-100">
-          <i class="bi bi-house icon flex-shrink-0"></i>
-          <div>
-            <h4 class="title"><a href="#" class="stretched-link">Construcción de Viviendas</a></h4>
-            <p class="description">Diseñamos y construimos viviendas adaptadas a las necesidades de cada cliente, con altos estándares de calidad.</p>
+  
+          <!-- Construcciones en Estructuras Metálicas -->
+          <div class="col-md-6 mb-3">
+            <div class="service-item" onclick="openModalConstruccion('fluidos')">
+              <div class="pic">
+                <img src="assets/img/facilidadconstruccion9.jpg" class="img-fluid" alt="Construcciones en Estructuras Metálicas">
+              </div>
+              <div class="service-info">
+                <h4 data-lang="es:Estructuras Metálicas,en:Metal Structure">Construcciones en Estructuras Metálicas</h4>
+                <span data-lang="es:Mantenimiento de galpones y construcción de estructuras.,en:Maintenance of warehouses and structure construction.">
+                  Mantenimiento de galpones y construcción de estructuras
+                </span>
+                <div class="icon"><i class="bi bi-building"></i></div> <!-- 🏗️ Icono de estructuras metálicas -->
+              </div>
+            </div>
           </div>
-        </div>
-      </div><!-- End Service Item -->
-
-      <!-- Energías Renovables -->
-      <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
-        <div class="service-item d-flex position-relative h-100">
-          <i class="bi bi-lightning icon flex-shrink-0"></i>
-          <div>
-            <h4 class="title"><a href="#" class="stretched-link">Energías Renovables</a></h4>
-            <p class="description">Implementamos soluciones sostenibles para generación de energía limpia y eficiente.</p>
+  
+          <!-- Apertura y Lastrado de Vías -->
+          <div class="col-md-6 mb-3">
+            <div class="service-item" onclick="openModalConstruccion('seguridad')">
+              <div class="pic">
+                <img src="assets/img/facilidadconstruccion7.jpg" class="img-fluid" alt="Apertura y Lastrado de Vías">
+              </div>
+              <div class="service-info">
+                <h4 data-lang="es:Apertura y Lastrado de Vías,en:Road Opening and Graveling">Apertura y Lastrado de Vías</h4>
+                <span data-lang="es:Construcción y habilitación de caminos en cualquier terreno.,en:Construction and enabling of roads in any terrain.">
+                  Construcción y habilitación de caminos en cualquier terreno
+                </span>
+                <div class="icon"><i class="bi bi-cone-striped"></i></div> <!-- 🚧 Icono de obras viales -->
+              </div>
+            </div>
           </div>
-        </div>
-      </div><!-- End Service Item -->
+         <!-- Sección: Servicios de Electricidad -->
+  
+  
+    
+  
+  </section>
+  
+  
 
-      <!-- Dirección y Supervisión de Obras -->
-      <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
-        <div class="service-item d-flex position-relative h-100">
-          <i class="bi bi-clipboard-check icon flex-shrink-0"></i>
-          <div>
-            <h4 class="title"><a href="#" class="stretched-link">Dirección y Supervisión de Obras</a></h4>
-            <p class="description">Garantizamos el cumplimiento de plazos y calidad en cada proyecto de construcción.</p>
-          </div>
-        </div>
-      </div><!-- End Service Item -->
-
-      <!-- Multiespacios Deportivos -->
-      <div class="col-md-6" data-aos="fade-up" data-aos-delay="700">
-        <div class="service-item d-flex position-relative h-100">
-          <i class="bi bi-basketball icon flex-shrink-0"></i>
-          <div>
-            <h4 class="title"><a href="#" class="stretched-link">Multiespacios Deportivos</a></h4>
-            <p class="description">Diseñamos y construimos áreas deportivas adaptadas a diferentes disciplinas y necesidades.</p>
-          </div>
-        </div>
-      </div><!-- End Service Item -->
-
-    </div>
-  </div>
-</section><!-- /Servicios de Construcción -->
     <!-- Features Section -->
+    <!-- Beneficios de Nuestros Servicios -->
     <section id="features" class="features section">
 
       <!-- Título de la Sección -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>¿Por qué elegirnos?</h2>
-        <p>Compromiso, innovación y calidad en cada proyecto de construcción.</p>
+        <h2 data-lang="es:¿Por qué elegirnos?,en:Why Choose Us?">¿Por qué elegirnos?</h2>
+        <p data-lang="es:Compromiso, innovación y calidad en cada proyecto de construcción.,en:Commitment, innovation, and quality in every construction project."></p>
       </div><!-- End Section Title -->
     
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -208,19 +241,24 @@
           <div class="col-lg-3">
             <ul class="nav nav-tabs flex-column">
               <li class="nav-item">
-                <a class="nav-link active show" data-bs-toggle="tab" href="#features-tab-1">Experiencia en Construcción</a>
+                <a class="nav-link active show" data-bs-toggle="tab" href="#features-tab-1" 
+                   data-lang="es:Experiencia en Construcción,en:Construction Experience">Experiencia en Construcción</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#features-tab-2">Innovación y Tecnología</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#features-tab-2" 
+                   data-lang="es:Innovación y Tecnología,en:Innovation and Technology">Innovación y Tecnología</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#features-tab-3">Calidad y Seguridad</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#features-tab-3" 
+                   data-lang="es:Calidad y Seguridad,en:Quality and Safety">Calidad y Seguridad</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#features-tab-4">Sostenibilidad</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#features-tab-4" 
+                   data-lang="es:Sostenibilidad,en:Sustainability">Sostenibilidad</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#features-tab-5">Gestión Integral</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#features-tab-5" 
+                   data-lang="es:Gestión Integral,en:Comprehensive Management">Gestión Integral</a>
               </li>
             </ul>
           </div>
@@ -233,9 +271,9 @@
               <div class="tab-pane active show" id="features-tab-1">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Más de 15 años construyendo soluciones</h3>
-                    <p class="fst-italic">Nuestra trayectoria nos ha permitido consolidar proyectos exitosos en diversas áreas de la construcción.</p>
-                    <p>Contamos con un equipo altamente capacitado en ingeniería civil, hidráulica y estructural, garantizando calidad y precisión en cada obra.</p>
+                    <h3 data-lang="es:Más de 15 años construyendo soluciones,en:Over 15 years building solutions">Más de 15 años construyendo soluciones</h3>
+                <p class="fst-italic" data-lang="es:Nuestra trayectoria nos ha permitido consolidar proyectos exitosos en diversas áreas de la construcción.,en:Our experience has allowed us to develop successful projects in various construction areas."></p>
+                <p data-lang="es:Contamos con un equipo altamente capacitado en ingeniería civil, hidráulica y estructural, garantizando calidad y precisión en cada obra.,en:We have a highly trained team in civil, hydraulic, and structural engineering, ensuring quality and precision in every project."></p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/serv25.jpg" alt="Construcción" class="img-fluid">
@@ -247,12 +285,12 @@
               <div class="tab-pane" id="features-tab-2">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Uso de tecnología avanzada</h3>
-                    <p class="fst-italic">Aplicamos técnicas innovadoras en la planificación y ejecución de proyectos.</p>
-                    <p>Desde modelado BIM hasta herramientas de monitoreo en tiempo real, optimizamos cada fase de la construcción para mejorar la eficiencia y reducir costos.</p>
+                    <h3 data-lang="es:Uso de tecnología,en:Use of Technology">Uso de tecnología</h3>
+                    <p class="fst-italic" data-lang="es:Aplicamos técnicas innovadoras en la planificación y ejecución de proyectos.,en:We apply innovative techniques in project planning and execution."></p>
+                    <p data-lang="es:Implementamos tecnología avanzada en cada etapa de nuestros proyectos. Utilizamos equipos de topografía de alta precisión, software de diseño y planificación, maquinaria especializada para construcción y herramientas digitales para supervisión en campo. Esto nos permite optimizar los procesos, mejorar la calidad de la obra y garantizar mayor eficiencia en tiempo y costos.,en:We implement advanced technology at every stage of our projects. We use high-precision surveying equipment, design and planning software, specialized construction machinery, and digital tools for field supervision. This allows us to optimize processes, improve project quality, and ensure greater efficiency in time and costs."></p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/serv26.jpg" alt="Innovación en Construcción" class="img-fluid">
+                    <img src="assets/img/serv299.jpg" alt="Innovación en Construcción" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -261,9 +299,9 @@
               <div class="tab-pane" id="features-tab-3">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Compromiso con la seguridad y calidad</h3>
-                    <p class="fst-italic">Implementamos estrictos protocolos de seguridad en cada proyecto.</p>
-                    <p>Garantizamos el cumplimiento de normativas nacionales e internacionales, minimizando riesgos y asegurando estructuras seguras y duraderas.</p>
+                    <h3 data-lang="es:Compromiso con la seguridad y calidad,en:Commitment to Safety and Quality">Compromiso con la seguridad y calidad</h3>
+                    <p class="fst-italic" data-lang="es:Implementamos estrictos protocolos de seguridad en cada proyecto.,en:We implement strict safety protocols in every project."></p>
+                    <p data-lang="es:Garantizamos el cumplimiento de normativas nacionales e internacionales, minimizando riesgos y asegurando estructuras seguras y duraderas.,en:We ensure compliance with national and international regulations, minimizing risks and guaranteeing safe and durable structures."></p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/serv27.jpg" alt="Seguridad en Construcción" class="img-fluid">
@@ -275,9 +313,9 @@
               <div class="tab-pane" id="features-tab-4">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Construcción sostenible y eficiente</h3>
-                    <p class="fst-italic">Diseñamos proyectos que respetan el medio ambiente.</p>
-                    <p>Incorporamos materiales ecológicos y estrategias de eficiencia energética para reducir la huella de carbono de nuestras obras.</p>
+                    <h3 data-lang="es:Construcción sostenible y eficiente,en:Sustainable and Efficient Construction">Construcción sostenible y eficiente</h3>
+                    <p class="fst-italic" data-lang="es:Diseñamos proyectos que respetan el medio ambiente.,en:We design projects that respect the environment."></p>
+                    <p data-lang="es:Incorporamos materiales ecológicos y estrategias de eficiencia energética para reducir la huella de carbono de nuestras obras.,en:We incorporate eco-friendly materials and energy efficiency strategies to reduce the carbon footprint of our projects."></p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/serv28.jpg" alt="Construcción Sostenible" class="img-fluid">
@@ -289,9 +327,9 @@
               <div class="tab-pane" id="features-tab-5">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Gestión de proyectos eficiente</h3>
-                    <p class="fst-italic">Desde la planificación hasta la entrega final, ofrecemos un servicio completo.</p>
-                    <p>Supervisamos cada etapa del proyecto para garantizar que se cumplan los plazos y estándares de calidad establecidos.</p>
+                    <h3 data-lang="es:Gestión de proyectos eficiente,en:Efficient Project Management">Gestión de proyectos eficiente</h3>
+                    <p class="fst-italic" data-lang="es:Desde la planificación hasta la entrega final, ofrecemos un servicio completo.,en:From planning to final delivery, we offer a comprehensive service."></p>
+                    <p data-lang="es:Supervisamos cada etapa del proyecto para garantizar que se cumplan los plazos y estándares de calidad establecidos.,en:We supervise each stage of the project to ensure that deadlines and quality standards are met."></p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/serv29.jpg" alt="Gestión de Proyectos" class="img-fluid">
@@ -305,8 +343,8 @@
     
       </div>
     
-    </section><!-- /Features Section -->
-    
+  </div><!-- End container -->
+</section><!-- /Beneficios de Nuestros Servicios -->
 
   </main>
 
@@ -319,13 +357,17 @@
             <span class="sitename">HLL</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>Km 1, Vía Lago Agrio, Sector Terranova.</p>
-            <p>El Coca, Orellana - Ecuador</p>
-            <p class="mt-3"><strong>Teléfono:</strong> <span>+593 98 800 4208</span></p>
-            <p><strong>E-mail:</strong> <span>herrerallori.cia@servicioshll.com</span></p>
+            <p data-lang="es:Km 3, Vía Lago Agrio, Sector Terranova.,en:Km 3, Vía Lago Agrio, Sector Terranova.">
+              Km 1, Vía Lago Agrio, Sector Terranova.
+            </p>
+            <p data-lang="es:El Coca, Orellana - Ecuador,en:El Coca, Orellana - Ecuador">
+              El Coca, Orellana - Ecuador
+            </p>
+            <p class="mt-3"><strong data-lang="es:Teléfono:,en:Phone:">Teléfono:</strong> <span>+593 98 800 4208</span></p>
+            <p><strong data-lang="es:E-mail:,en:Email:">E-mail:</strong> <span>herrerallori.cia@servicioshll.com</span></p>
           </div>
           <div class="social-links d-flex mt-4">
-            <!-- <a href=""><i class="bi bi-twitter-x"></i></a>-->
+            <!-- <a href=""><i class="bi bi-twitter-x"></i></a> -->
             <a href="https://www.facebook.com/profile.php?id=100069891982623"><i class="bi bi-facebook"></i></a>
             <a href="https://www.instagram.com/herreralloricia/"><i class="bi bi-instagram"></i></a>
             <a href="https://www.linkedin.com/company/herrera-llori-cia-ltda/?originalSubdomain=ec"><i class="bi bi-linkedin"></i></a>
@@ -333,50 +375,54 @@
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Enlaces Útiles</h4>
+          <h4 data-lang="es:Enlaces Útiles,en:Useful Links">Enlaces Útiles</h4>
           <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="about.html">Sobre Nosotros</a></li>
-            <li><a href="services.html">Servicios</a></li>
-            <li><a href="políticassig.html">Políticas</a></li>
-
+            <li><a href="index.html" data-lang="es:Inicio,en:Home">Inicio</a></li>
+            <li><a href="about.html" data-lang="es:Sobre Nosotros,en:About Us">Sobre Nosotros</a></li>
+            <li><a href="services.html" data-lang="es:Servicios,en:Services">Servicios</a></li>
+            <li><a href="políticassig.html" data-lang="es:Políticas,en:Policies">Políticas</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Horario de Atención</h4>
+          <h4 data-lang="es:Horario de Atención,en:Business Hours">Horario de Atención</h4>
           <ul>
-            <li><strong>Lunes - Viernes:</strong> 08:00 - 18:00</li>
-            <li><strong>Sábados:</strong> 09:00 - 13:00</li>
-            <li><strong>Domingos:</strong> Cerrado</li>
+            <li><strong data-lang="es:Lunes - Viernes:,en:Monday - Friday:">Lunes - Viernes:</strong> 08:00 - 18:00</li>
+            <li><strong data-lang="es:Sábados:,en:Saturdays:">Sábados:</strong> 09:00 - 13:00</li>
+            <li><strong data-lang="es:Domingos:,en:Sundays:">Domingos:</strong> <span data-lang="es:Cerrado,en:Closed">Cerrado</span></li>
           </ul>
         </div>
 
         <div class="col-lg-4 col-md-12 footer-newsletter">
-          <h4>Recibe Información Exclusiva</h4>
-          <p>Déjanos tu correo para enviarte actualizaciones sobre nuestros servicios y novedades en la industria.</p>
+          <h4 data-lang="es:Recibe Información Exclusiva,en:Receive Exclusive Information">Recibe Información Exclusiva</h4>
+          <p data-lang="es:Déjanos tu correo para enviarte actualizaciones sobre nuestros servicios y novedades en la industria. ,en:Leave us your email to receive updates on our services and industry news.">
+            Déjanos tu correo para enviarte actualizaciones sobre nuestros servicios y novedades en la industria.
+          </p>
           
           <form action="forms/newsletter.php" method="post" class="php-email-form">
             <div class="newsletter-form">
-              <input type="email" name="email" placeholder="Ingresa tu correo" required>
-              <input type="submit" value="Enviar">
+              <input type="email" name="email" placeholder="Ingresa tu correo" required data-lang="es:Ingresa tu correo,en:Enter your email">
+              <input type="submit" value="Enviar" data-lang="es:Enviar,en:Send">
             </div>
-            <div class="loading">Cargando...</div>
-            <div class="error-message">Hubo un error. Inténtalo de nuevo.</div>
-            <div class="sent-message">¡Tu correo ha sido registrado! Nos pondremos en contacto contigo.</div>
+            <div class="loading" data-lang="es:Cargando...,en:Loading...">Cargando...</div>
+            <div class="error-message" data-lang="es:Hubo un error. Inténtalo de nuevo.,en:There was an error. Please try again.">
+              Hubo un error. Inténtalo de nuevo.
+            </div>
+            <div class="sent-message" data-lang="es:¡Tu correo ha sido registrado! Nos pondremos en contacto contigo.,
+                                                  en:Your email has been registered! We will contact you soon.">
+              ¡Tu correo ha sido registrado! Nos pondremos en contacto contigo.
+            </div>
           </form>
         </div>
-        
-
       </div>
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span></span> <strong class="px-1 sitename">HLL</strong> <span>Herrera Llori CIA. LTDA.</span></p>
+      <p>© <span></span> <strong class="px-1 sitename">HLL </strong> <span data-lang="es:Herrera Llori CIA. LTDA.,en:Herrera Llori CIA. LTDA.">Herrera Llori CIA. LTDA.</span></p>
     </div>
   
+  
   </footer>
-
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

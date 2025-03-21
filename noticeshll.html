@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Noticias</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/main2.css" rel="stylesheet">
+
+
+</head>
+
+<body class="about-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div id="button-container" class="d-flex align-items-center gap-2">
+      <button id="language-toggle" class="language-toggle btn btn-light p-2">
+        <i class="bi bi-globe"></i> <span id="language-text">ES</span>
+      </button>
+      <button id="theme-toggle" class="theme-toggle btn btn-light p-2">
+        <i id="theme-icon" class="bi bi-moon-fill"></i>
+      </button>
+    </div>
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <h1 class="sitename d-flex align-items-center">
+            <img src="assets/img/hll2.png" alt="Logo HLL" style="max-width: 150px; height: auto; margin-right: 10px;">
+            <span id="lideres-texto" class="texto-lideres"
+                style="font-size: clamp(12px, 2vw, 18px); font-weight: bold; border-bottom: 2px solid red; padding-bottom: 3px; color: rgb(70, 64, 64);"
+                data-lang="es:Líderes Imparables,en:Unstoppable Leaders">
+                Líderes Imparables
+            </span>
+        
+      </h1>
+      
+      
+      
+            </a>
+
+            <nav id="navmenu" class="navmenu">
+              <ul>
+                <li><a href="index.html" data-lang="es:Inicio,en:Home">Inicio</a></li>   
+                             
+                <li><a href="about.html" ><span data-lang="es:Nosotros,en:About Us">Nosotros</i></a>
+                  <!--<ul>
+                  <li><a href="team.html" data-lang="es:Equipo de trabajo,en:Team">Equipo de trabajo</a></li>                    
+                  </ul>-->
+                </li>
+                <li class="dropdown"><a href="services.html"  ><span data-lang="es:Servicios,en:Services">Servicios</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+               <!-- <li><a href="services.html">Servicios</a></li>-->
+               <ul>
+                <li><a href="services.html" data-lang="es:Servicio Petroleros,en:Oil Services">Servicio Petroleros</a></li>
+                <li><a href="servicesconstruccion.html" data-lang="es:Servicios de Obra Civil,en:Civil Works Services.">Servicios de Obra Civil.</a></li>
+                <li><a href="serviceselectricos.html" data-lang="es:Servicios Electrónicos,en:Electronic Services">Servicios Electrónicos</a></li>
+
+               <!-- <li><a href="testimonials.html">Testimonials</a></li>-->
+                
+              </ul>
+          <li><a href="portfolio.html" data-lang="es:Portafolio,en:Portfolio">Portafolio</a></li>
+         <li><a href="políticassig.html" data-lang="es:Políticas,en:Policies">Políticas>Políticas</a></li>
+         <li><a href="noticeshll.html" data-lang="es:Noticias,en:News">Noticias</a></li>
+
+         <!-- <li><a href="blog.html">Blog</a></li>-->
+          <!-- <li><a href="contact.html">Contacto</a></li>-->
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="contact.html" data-lang="es:Contactanos,en:Contact Us">Contactanos</a>
+
+
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title light-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0" data-lang="es:Noticias,en:News">Noticias</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html" data-lang="es:Inicio,en:Home">Inicio</a></li>
+            <li class="current" data-lang="es:Noticias,en:News">Noticias</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-8">
+
+          <!-- Blog Details Section -->
+          <section id="blog-details" class="blog-details section">
+            <div class="container">
+
+              <article class="article">
+                <div class="post-img">
+                  <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
+                </div>
+                
+                <h2 class="title" data-lang="es:Inclusión Femenina en el Sector Petrolero: Mujeres en Spooler y Banding,en:Women's Inclusion in the Oil Industry: Women in Spooler and Banding">
+                  Inclusión Femenina en el Sector Petrolero: Mujeres en Spooler y Banding
+                </h2>
+              
+                <div class="meta-top">
+                  <ul>
+                    <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="#">Redacción HLL</a></li>
+                    <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="#"><time datetime="2025-03-20">Mar 20, 2025</time></a></li>
+                  </ul>
+                </div>
+              
+                <div class="content">
+                  <p data-lang="es:La industria petrolera sigue avanzando hacia la equidad de género, y Herrera Llori Cia. Ltda. marca un hito con la inclusión de mujeres en áreas operativas como Spooler y Banding.,en:The oil industry continues to advance towards gender equity, and Herrera Llori Cia. Ltda. marks a milestone by including women in operational areas such as Spooler and Banding.">
+                    La industria petrolera sigue avanzando hacia la equidad de género, y Herrera Llori Cia. Ltda. marca un hito con la inclusión de mujeres en áreas operativas como Spooler y Banding.
+                  </p>
+              
+                  <p data-lang="es:Desde 2024, la empresa ha implementado un programa de capacitación especializado para que más mujeres puedan desempeñarse en actividades técnicas, demostrando su habilidad y compromiso en un sector históricamente liderado por hombres.,en:Since 2024, the company has implemented a specialized training program to enable more women to work in technical activities, demonstrating their skills and commitment in a traditionally male-dominated sector.">
+                    Desde 2024, la empresa ha implementado un programa de capacitación especializado para que más mujeres puedan desempeñarse en actividades técnicas, demostrando su habilidad y compromiso en un sector históricamente liderado por hombres.
+                  </p>
+              
+                  <blockquote>
+                    <p data-lang="es:'Es un paso importante para la inclusión laboral. Las mujeres han demostrado ser altamente capacitadas para operar equipos de Spooler y Banding, optimizando procesos y garantizando la seguridad en cada proyecto.' - Representante de HLL,en:'It is an important step for labor inclusion. Women have proven to be highly skilled in operating Spooler and Banding equipment, optimizing processes, and ensuring safety in every project.' - HLL Representative">
+                      "Es un paso importante para la inclusión laboral. Las mujeres han demostrado ser altamente capacitadas para operar equipos de Spooler y Banding, optimizando procesos y garantizando la seguridad en cada proyecto." - Representante de HLL
+                    </p>
+                  </blockquote>
+              
+                  <p data-lang="es:Actualmente, el 20% del personal operativo en estas áreas está compuesto por mujeres, y se espera que este número siga en aumento en los próximos años.,en:Currently, 20% of the operational staff in these areas are women, and this number is expected to grow in the coming years.">
+                    Actualmente, el 20% del personal operativo en estas áreas está compuesto por mujeres, y se espera que este número siga en aumento en los próximos años.
+                  </p>
+              
+                  <p data-lang="es:Este compromiso con la equidad de género refuerza la visión de Herrera Llori Cia. Ltda. como una empresa innovadora y socialmente responsable en la industria petrolera.,en:This commitment to gender equity reinforces Herrera Llori Cia. Ltda.'s vision as an innovative and socially responsible company in the oil industry.">
+                    Este compromiso con la equidad de género refuerza la visión de Herrera Llori Cia. Ltda. como una empresa innovadora y socialmente responsable en la industria petrolera.
+                  </p>
+                </div>
+              
+                <div class="meta-bottom">
+                  <i class="bi bi-folder"></i>
+                  <ul class="cats">
+                    <li><a href="#" data-lang="es:Inclusión Laboral,en:Labor Inclusion">Inclusión Laboral</a></li>
+                  </ul>
+                </div>
+              </article>
+              <!-- Segunda Noticia -->
+    <article class="article">
+      <div class="post-img">
+        <img src="assets/img/asdasda.jpg" alt="" class="img-fluid">
+      </div>
+
+      <h2 class="title" data-lang="es:¡Campeones del Torneo de Fútbol Empresarial!,en:Champions of the Corporate Soccer Tournament!">
+        ¡Campeones del Torneo de Fútbol Empresarial!
+      </h2>
+      
+      <div class="meta-top">
+        <ul>
+          <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="#">Redacción HLL</a></li>
+          <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="#"><time datetime="2025-03-21">Mar 21, 2025</time></a></li>
+        </ul>
+      </div>
+      
+      <div class="content">
+        <p data-lang="es:¡Hola! ¿Sabías que ganamos el torneo de fútbol empresarial? En Herrera Llori Cía. Ltda., no solo trabajamos con excelencia... ¡también jugamos en equipo!,en:Hi there! Did you know we won the corporate soccer tournament? At Herrera Llori Cía. Ltda., we don't just work with excellence... we also play as a team!">
+          ¡Hola! ¿Sabías que ganamos el torneo de fútbol empresarial? En Herrera Llori Cía. Ltda., no solo trabajamos con excelencia... ¡también jugamos en equipo!
+        </p>
+        <blockquote>
+          <p data-lang="es:'El esfuerzo, la disciplina y el compañerismo nos llevaron a la victoria. ¡Gracias equipo!',en:'Effort, discipline, and teamwork led us to victory. Thank you, team!'">
+            "El esfuerzo, la disciplina y el compañerismo nos llevaron a la victoria. ¡Gracias equipo!"
+          </p>
+        </blockquote>
+        <p data-lang="es:Este logro refleja el espíritu de unidad que vivimos cada día en Herrera Llori Cía. Ltda.,en:This achievement reflects the spirit of unity we live every day at Herrera Llori Cía. Ltda.">
+          Este logro refleja el espíritu de unidad que vivimos cada día en Herrera Llori Cía. Ltda.
+        </p>
+      </div>
+      
+      <div class="meta-bottom">
+        <i class="bi bi-folder"></i>
+        <ul class="cats">
+          <li><a href="#" data-lang="es:Vida Empresarial,en:Corporate Life">Vida Empresarial</a></li>
+        </ul>
+      </div>
+      
+    </article>
+    <article class="article">
+      <div class="post-img">
+        <img src="assets/img/blog/blog-2.jpg" alt="" class="img-fluid">
+      </div>
+
+      <h2 class="title" data-lang="es:Un Ambiente Laboral de Excelencia en Herrera Llori Cia. Ltda.,en:An Excellent Work Environment at Herrera Llori Cia. Ltda.">
+        Un Ambiente Laboral de Excelencia en Herrera Llori Cia. Ltda.
+      </h2>
+
+      <div class="meta-top">
+        <ul>
+          <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="#">Redacción HLL</a></li>
+          <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="#"><time datetime="2025-03-21">Mar 21, 2025</time></a></li>
+        </ul>
+      </div>
+
+      <div class="content">
+        <p data-lang="es:En Herrera Llori Cia. Ltda., el bienestar de nuestros colaboradores es una prioridad. Un ambiente de trabajo seguro, inclusivo y motivador ha sido clave para el crecimiento de la empresa.,en:At Herrera Llori Cia. Ltda., the well-being of our employees is a priority. A safe, inclusive, and motivating work environment has been key to the company's growth.">
+          En Herrera Llori Cia. Ltda., el bienestar de nuestros colaboradores es una prioridad. Un ambiente de trabajo seguro, inclusivo y motivador ha sido clave para el crecimiento de la empresa.
+        </p>
+        <blockquote>
+          <p data-lang="es:'Trabajar en HLL es sinónimo de estabilidad y crecimiento profesional. La empresa nos brinda capacitación constante y valora nuestras ideas.',en:'Working at HLL means stability and professional growth. The company provides continuous training and values our ideas.'">
+            "Trabajar en HLL es sinónimo de estabilidad y crecimiento profesional. La empresa nos brinda capacitación constante y valora nuestras ideas."
+          </p>
+        </blockquote>
+        <p data-lang="es:Además, la seguridad laboral es una prioridad, cumpliendo estrictamente con normativas y certificaciones internacionales.,en:Additionally, workplace safety is a priority, strictly complying with international regulations and certifications.">
+          Además, la seguridad laboral es una prioridad, cumpliendo estrictamente con normativas y certificaciones internacionales.
+        </p>
+      </div>
+
+      <div class="meta-bottom">
+        <i class="bi bi-folder"></i>
+        <ul class="cats">
+          <li><a href="#" data-lang="es:Calidad Laboral,en:Work Quality">Calidad Laboral</a></li>
+        </ul>
+      </div>
+    </article>
+
+            </div>
+            
+          </section><!-- /Blog Details Section -->
+
+          
+        </div>
+
+        <div class="col-lg-4 sidebar">
+
+          <div class="widgets-container">
+
+            <!-- Search Widget -->
+<!-- Search Widget -->
+<div class="search-widget widget-item">
+  <h3 class="widget-title" data-lang="es:Buscar,en:Search">Buscar</h3>
+  <form action="javascript:void(0);">
+    <input type="text" id="search-input" placeholder="Buscar noticias..." data-lang="es:Buscar noticias...,en:Search news...">
+    <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+  </form>
+  <!-- Dropdown para sugerencias -->
+  <ul id="search-results" class="search-results"></ul>
+</div>
+
+
+           
+
+            <!-- Recent Posts Widget -->
+            <div class="recent-posts-widget widget-item">
+
+              <h3 class="widget-title">Posts Recientes</h3>
+
+              <div class="post-item">
+                <img src="assets/img/blog/blog-recent-1.jpg" alt="" class="flex-shrink-0">
+                <div>
+                  <h4><a href="blog-details.html">Inclusión Femenina en el Sector Petrolero</a></h4>
+                  <time datetime="2020-01-01">Jan 1, 2020</time>
+                </div>
+              </div><!-- End recent post item-->
+
+              <div class="post-item">
+                <img src="assets/img/blog/blog-recent-2.jpg" alt="" class="flex-shrink-0">
+                <div>
+                  <h4><a href="blog-details.html">Un Ambiente Laboral de Excelencia en Herrera Llori Cia. Ltda.</a></h4>
+                  <time datetime="2020-01-01">Jan 1, 2020</time>
+                </div>
+              </div><!-- End recent post item-->
+
+             <!-- <div class="post-item">
+                <img src="assets/img/blog/blog-recent-3.jpg" alt="" class="flex-shrink-0">
+                <div>
+                  <h4><a href="blog-details.html">Un Ambiente Laboral de Excelencia en Herrera Llori Cia. Ltda.</a></h4>
+                  <time datetime="2020-01-01">Jan 1, 2020</time>
+                </div>
+              </div>
+
+              <div class="post-item">
+                <img src="assets/img/blog/blog-recent-4.jpg" alt="" class="flex-shrink-0">
+                <div>
+                  <h4><a href="blog-details.html">Un Ambiente Laboral de Excelencia en Herrera Llori Cia. Ltda.</a></h4>
+                  <time datetime="2020-01-01">Jan 1, 2020</time>
+                </div>
+              </div>
+
+              <div class="post-item">
+                <img src="assets/img/blog/blog-recent-5.jpg" alt="" class="flex-shrink-0">
+                <div>
+                  <h4><a href="blog-details.html">Un Ambiente Laboral de Excelencia en Herrera Llori Cia. Ltda.</a></h4>
+                  <time datetime="2020-01-01">Jan 1, 2020</time>
+                </div>
+              </div>  
+
+            </div>
+
+            
+            <div class="tags-widget widget-item">
+
+              <h3 class="widget-title">Tags</h3>
+              <ul>
+                <li><a href="#">App</a></li>
+                <li><a href="#">IT</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Mac</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Office</a></li>
+                <li><a href="#">Creative</a></li>
+                <li><a href="#">Studio</a></li>
+                <li><a href="#">Smart</a></li>
+                <li><a href="#">Tips</a></li>
+                <li><a href="#">Marketing</a></li>
+              </ul>
+
+            </div> -->
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">HLL</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p data-lang="es:Km 3, Vía Lago Agrio, Sector Terranova.,en:Km 3, Vía Lago Agrio, Sector Terranova.">
+              Km 1, Vía Lago Agrio, Sector Terranova.
+            </p>
+            <p data-lang="es:El Coca, Orellana - Ecuador,en:El Coca, Orellana - Ecuador">
+              El Coca, Orellana - Ecuador
+            </p>
+            <p class="mt-3"><strong data-lang="es:Teléfono:,en:Phone:">Teléfono:</strong> <span>+593 98 800 4208</span></p>
+            <p><strong data-lang="es:E-mail:,en:Email:">E-mail:</strong> <span>herrerallori.cia@servicioshll.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <!-- <a href=""><i class="bi bi-twitter-x"></i></a> -->
+            <a href="https://www.facebook.com/profile.php?id=100069891982623"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/herreralloricia/"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/herrera-llori-cia-ltda/?originalSubdomain=ec"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4 data-lang="es:Enlaces Útiles,en:Useful Links">Enlaces Útiles</h4>
+          <ul>
+            <li><a href="index.html" data-lang="es:Inicio,en:Home">Inicio</a></li>
+            <li><a href="about.html" data-lang="es:Sobre Nosotros,en:About Us">Sobre Nosotros</a></li>
+            <li><a href="services.html" data-lang="es:Servicios,en:Services">Servicios</a></li>
+            <li><a href="políticassig.html" data-lang="es:Políticas,en:Policies">Políticas</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4 data-lang="es:Horario de Atención,en:Business Hours">Horario de Atención</h4>
+          <ul>
+            <li><strong data-lang="es:Lunes - Viernes:,en:Monday - Friday:">Lunes - Viernes:</strong> 08:00 - 18:00</li>
+            <li><strong data-lang="es:Sábados:,en:Saturdays:">Sábados:</strong> 09:00 - 13:00</li>
+            <li><strong data-lang="es:Domingos:,en:Sundays:">Domingos:</strong> <span data-lang="es:Cerrado,en:Closed">Cerrado</span></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4 data-lang="es:Recibe Información Exclusiva,en:Receive Exclusive Information">Recibe Información Exclusiva</h4>
+          <p data-lang="es:Déjanos tu correo para enviarte actualizaciones sobre nuestros servicios y novedades en la industria. ,en:Leave us your email to receive updates on our services and industry news.">
+            Déjanos tu correo para enviarte actualizaciones sobre nuestros servicios y novedades en la industria.
+          </p>
+          
+          <form action="forms/newsletter.php" method="post" class="php-email-form">
+            <div class="newsletter-form">
+              <input type="email" name="email" placeholder="Ingresa tu correo" required data-lang="es:Ingresa tu correo,en:Enter your email">
+              <input type="submit" value="Enviar" data-lang="es:Enviar,en:Send">
+            </div>
+            <div class="loading" data-lang="es:Cargando...,en:Loading...">Cargando...</div>
+            <div class="error-message" data-lang="es:Hubo un error. Inténtalo de nuevo.,en:There was an error. Please try again.">
+              Hubo un error. Inténtalo de nuevo.
+            </div>
+            <div class="sent-message" data-lang="es:¡Tu correo ha sido registrado! Nos pondremos en contacto contigo.,
+                                                  en:Your email has been registered! We will contact you soon.">
+              ¡Tu correo ha sido registrado! Nos pondremos en contacto contigo.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span></span> <strong class="px-1 sitename">HLL </strong> <span data-lang="es:Herrera Llori CIA. LTDA.,en:Herrera Llori CIA. LTDA.">Herrera Llori CIA. LTDA.</span></p>
+    </div>
+  
+  
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const searchInput = document.getElementById("search-input");
+    const searchResults = document.getElementById("search-results");
+    const articles = document.querySelectorAll(".article");
+
+    // Crear botón "Ver Todos los Posts"
+    const viewAllButton = document.createElement("button");
+    viewAllButton.textContent = "Ver Todos los Posts";
+    viewAllButton.style.display = "none"; // Inicialmente oculto
+    viewAllButton.style.marginTop = "10px";
+    viewAllButton.style.padding = "10px";
+    viewAllButton.style.border = "none";
+    viewAllButton.style.backgroundColor = "#DE444C";
+    viewAllButton.style.color = "#fff";
+    viewAllButton.style.borderRadius = "5px";
+    viewAllButton.style.cursor = "pointer";
+
+    searchResults.parentNode.appendChild(viewAllButton);
+
+    function searchPosts(query) {
+        let results = [];
+        let queryLower = query.toLowerCase().trim();
+
+        articles.forEach(article => {
+            let titleElement = article.querySelector(".title");
+            let contentElement = article.querySelector(".content");
+
+            let title = titleElement ? titleElement.textContent.toLowerCase() : "";
+            let content = contentElement ? contentElement.textContent.toLowerCase() : "";
+
+            if (title.includes(queryLower) || content.includes(queryLower)) {
+                results.push({
+                    title: titleElement.textContent,
+                    element: article,
+                    titleElement: titleElement
+                });
+            }
+        });
+
+        return results;
+    }
+
+    function showSearchResults(results) {
+        searchResults.innerHTML = "";
+        if (results.length === 0 || searchInput.value.trim() === "") {
+            searchResults.style.display = "none";
+            viewAllButton.style.display = "none";
+            return;
+        }
+
+        searchResults.style.display = "block";
+        viewAllButton.style.display = "block"; // Muestra el botón al hacer una búsqueda
+
+        results.forEach(result => {
+            let li = document.createElement("li");
+            li.textContent = result.title;
+            li.classList.add("search-result-item");
+
+            li.addEventListener("click", function () {
+                highlightAndScroll(result.element, result.titleElement);
+                searchResults.style.display = "none";
+                searchInput.value = result.title;
+            });
+
+            searchResults.appendChild(li);
+        });
+    }
+
+    function highlightAndScroll(article, titleElement) {
+        articles.forEach(a => a.style.display = "none");
+        article.style.display = "block";
+        article.scrollIntoView({ behavior: "smooth", block: "start" });
+
+        titleElement.style.transition = "background-color 0.3s ease";
+        titleElement.style.backgroundColor = "yellow";
+        setTimeout(() => {
+            titleElement.style.backgroundColor = "transparent";
+        }, 1500);
+    }
+
+    searchInput.addEventListener("input", function () {
+        let query = searchInput.value;
+        let results = searchPosts(query);
+        showSearchResults(results);
+
+        if (query.trim() === "") {
+            viewAllButton.style.display = "none"; // Ocultar botón cuando el campo de búsqueda está vacío
+            articles.forEach(article => article.style.display = "block");
+        } else {
+            articles.forEach(article => article.style.display = "none");
+            results.forEach(result => result.element.style.display = "block");
+        }
+    });
+
+    searchInput.addEventListener("keypress", function (e) {
+        if (e.key === "Enter") {
+            e.preventDefault();
+            let results = searchPosts(searchInput.value);
+            if (results.length > 0) {
+                highlightAndScroll(results[0].element, results[0].titleElement);
+            }
+            searchResults.style.display = "none";
+        }
+    });
+
+    document.addEventListener("click", function (e) {
+        if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+            searchResults.style.display = "none";
+        }
+    });
+
+    // 🔹 Evento para mostrar todos los posts al hacer clic en "Ver Todos los Posts"
+    viewAllButton.addEventListener("click", function () {
+        searchInput.value = "";
+        searchResults.style.display = "none";
+        viewAllButton.style.display = "none"; // Ocultar botón cuando se restablecen los posts
+        articles.forEach(article => article.style.display = "block");
+    });
+});
+
+</script>
+</body>
+
+</html>

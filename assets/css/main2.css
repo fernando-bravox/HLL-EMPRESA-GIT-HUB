@@ -1,0 +1,1071 @@
+ /* Estilo por defecto (modo claro) */
+ .titulo-servicio {
+    color: #556270; /* Color normal en modo claro */
+}
+
+
+body.dark-mode .dark-text {
+  color: white !important;
+}
+.btn-politica {
+  background-color: var(--color-primario);
+  color: var(--color-texto);
+  border: 2px solid var(--color-primario);
+  padding: 10px 20px;
+  margin: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-politica:hover {
+  background-color: #d9232d;
+  color: var(--color-primario);
+  text-decoration: none;
+}
+:root {
+  --color-primario: #d9232d; /* Rojo corporativo */
+  --color-secundario: #333;  /* Gris oscuro */
+  --color-texto: #ffffff;    /* Blanco para el texto */
+
+}
+
+.btn-politica:hover {
+  background-color: #d9232d;
+  color: var(--color-primario);
+  text-decoration: none;
+}
+:root {
+  --color-primario: #d9232d; /* Rojo corporativo */
+  --color-secundario: #333;  /* Gris oscuro */
+  --color-texto: #ffffff;    /* Blanco para el texto */
+
+}
+body.dark-mode .btn-politica:hover {
+  color: #fff; /* Asegúrate que el texto siga blanco en hover también */
+}
+body.dark-mode .btn-politica {
+  color: var(--color-texto);
+}
+/* Estilos generales */
+.titulo-certificados {
+  color: #000000af; /* Color negro por defecto */
+  font-weight: bold;
+  margin-bottom: 2px;
+  font-size: 18px; /* Ajusta el tamaño según tus necesidades */
+}
+
+.dark-mode .titulo-certificados {
+  color: white !important;
+}
+
+
+
+.icono-casco {
+  width: 44px;
+  height: 30px;
+  vertical-align: middle;
+  filter: sepia(1) saturate(5) brightness(1.2);
+}
+
+.dark-mode .titulo-especifico {
+  color: white !important;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px; /* Espacio entre el borde y el video */
+  background: #2b2a2a; /* Color del borde */
+  border-radius: 10px; /* Bordes redondeados */
+  max-width: 100%; /* Evita que se desborde */
+  width: 560px; /* Ancho fijo para asegurar espacio */
+  margin: 0 auto; /* Centrar en la pantalla */
+}
+
+.video-container video {
+  width: 100%; /* Hace que el video se ajuste al contenedor */
+  max-width: 550px; /* Asegura que el video mantenga su tamaño máximo */
+  height: 280px;
+  display: block;
+  border-radius: 5px; /* Bordes del video */
+}
+
+/* Centrar el botón dentro del modal */
+.video-btn {
+  display: block;
+  margin: 20px auto; /* Centra horizontalmente */
+  text-align: center;
+  font-size: 18px;
+  padding: 10px 20px;
+}
+
+/* MODAL - Se superpone sobre todo */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  background: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 9999;
+}
+
+/* Caja del Modal */
+.modal-content {
+  background: var(--bs-light, #fff);
+  padding: 25px;
+  border-radius: 12px;
+  height: auto;
+  width: 80%;
+  max-width: 1000px;
+  text-align: left;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  animation: slideIn 0.3s ease-in-out;
+  overflow-y: auto;
+    /* 🔹 Habilitar el scroll vertical si el contenido es grande */
+    max-height: 85vh; /* El modal no será más alto que el 85% de la pantalla */
+  overflow-y: auto; /* Agregar scroll vertical si el contenido es mayor al 85% */
+}
+
+/* 🔹 Personalización del Scroll en el modal */
+.modal-content::-webkit-scrollbar {
+  width: 8px; /* Grosor de la barra de desplazamiento */
+}
+.modal-content::-webkit-scrollbar-thumb {
+  background-color: #CC0001; /* Color de la barra */
+  border-radius: 5px;
+}
+
+/* MODO OSCURO */
+body.dark-mode .modal-content {
+  background: var(--bs-dark, #222);
+  color: var(--bs-light, #fff);
+}
+
+body.dark-mode .close-btn {
+  color: var(--bs-light, #fff);
+}
+
+/* Botón de cerrar */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--bs-dark, #333);
+}
+
+/* 📱 Diseño especial para móviles */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 95%;
+    max-height: 90vh;
+    font-size: 14px;
+    padding: 20px;
+  }
+
+  .modal-overlay {
+    align-items: flex-start;
+    padding-top: 10%;
+  }
+}
+
+.subtitulo-servicio {
+  text-align: center; /* Centra el texto horizontalmente */
+  font-size: 1.5rem;  /* Ajusta el tamaño de la fuente */
+  font-weight: bold;  /* Lo hace más visible */
+  margin-top: 30px;   /* Espacio superior para mejor separación */
+  margin-bottom: 10px; /* Espacio inferior antes de la línea */
+}
+
+
+
+/* Cuando está en modo oscuro */
+body.dark-mode .titulo-servicio {
+    color: #ffffff !important; /* Texto blanco en modo oscuro */
+}
+
+  /* Color normal (modo claro) */
+.texto-lideres {
+    font-weight: bold;
+    font-size: 18px;
+    border-bottom: 2px solid red;
+    padding-bottom: 3px;
+    color: rgb(70, 64, 64); /* Texto negro en modo claro */
+}
+
+/* Cuando está en modo oscuro */
+body.dark-mode .texto-lideres {
+    color: #CC0001 !important; /* Texto rojo en modo oscuro */
+}
+
+  /* Modo oscuro: Estilo para los submenús */
+body.dark-mode .navmenu ul ul {
+    background-color: #222; /* Fondo oscuro para los submenús */
+    border: 1px solid #444; /* Borde oscuro para mejor visibilidad */
+}
+
+/* Cambiar el color del texto dentro de los submenús en modo oscuro */
+body.dark-mode .navmenu ul ul li a {
+    color: #fff !important; /* Texto en blanco */
+}
+
+/* Hover en los elementos del submenú en modo oscuro */
+body.dark-mode .navmenu ul ul li a:hover {
+    background-color: #444; /* Un poco más claro en hover */
+}
+
+/* Solución para el botón de "Contáctanos" en modo oscuro */
+body.dark-mode .btn-getstarted {
+    background-color: #d9232d !important; /* Rojo intenso */
+    color: white !important;
+}
+
+body.dark-mode .btn-getstarted:hover {
+    background-color: #a71e23 !important; /* Rojo más oscuro en hover */
+}
+
+/* Modo oscuro: Ajustar colores de los cuadros */
+body.dark-mode .contenedor-servicios-petroleros,
+body.dark-mode .contenedor-servicios-construccion {
+  background: #040404ab !important; /* Fondo oscuro */
+  color: #ffffff !important; /* Texto blanco */
+  border: 0px solid #444; /* Borde más sutil */
+}
+
+/* Asegurar que el texto dentro de los cuadros también sea claro */
+body.dark-mode .service-item span,
+body.dark-mode .service-item p {
+  color: #ffffff !important; /* Texto blanco */
+}
+
+body.dark-mode .service-item h4{
+  color: #f02a2a !important; /* Texto blanco */
+}
+
+/* Asegurar que los íconos sigan siendo visibles */
+body.dark-mode .service-item .icon {
+  color: #ff4747 !important; /* Rojo más visible en fondo oscuro */
+}
+
+/* Asegurar que el fondo de cada servicio sea oscuro */
+body.dark-mode .service-item {
+  background: #2c2c2c !important;
+  border: 1px solid #444 !important;
+}
+
+/* Modo oscuro: Ajustar la lista de servicios */
+body.dark-mode .services-list {
+  background: #2c2c2c !important;
+  border: 1px solid #444 !important;
+}
+
+/* Asegurar que el video mantenga contraste en modo oscuro */
+body.dark-mode .service-video::after {
+  background: rgba(0, 0, 0, 0.6) !important;
+}
+
+.pic img {
+  filter: contrast(1.2) brightness(1.1) saturate(1.3) sharpen(1px);
+  -webkit-filter: contrast(1.2) brightness(1.1) saturate(1.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.service-item {
+  display: flex;
+  align-items: center; /* Alinear verticalmente */
+  background: white;
+  padding: 12px;
+  margin: 10px 5px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  width: 350px; /* O el tamaño que necesites */
+  
+  min-height: 160px; /* Altura mínima para que todos sean iguales */
+  max-height: 210px; /* Ajuste flexible */
+
+}
+.service-item .icon {
+  font-size: 10px; /* Reduce el tamaño del icono */
+  color: #CC0001;
+  margin-top: 10px; /* Baja un poco el icono */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-item:hover {
+  transform: scale(1.02);
+}
+
+/* Ajustar las imágenes a la izquierda */
+.service-item .pic {
+  flex: 0 0 90; /* Tamaño fijo para todas las imágenes */
+  margin-right: 12px;
+}
+
+.service-item .pic img {
+  width: 120px; /* Ajustar tamaño uniforme */
+  height: 160px;
+  border-radius: 5px;
+}
+/* Contenedor de información */
+.service-info {
+  flex: 1;
+  text-align: justify; /* Justifica el texto */
+
+}
+
+/* Ajuste del título */
+.service-info h4 {
+  font-size: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: var(--heading-color);
+  text-transform: uppercase;
+}
+
+
+/* Ajuste del subtítulo */
+.service-info span {
+  font-size: 14px;
+  font-weight: normal;
+  color: #333;
+}
+
+/* Ajuste del texto */
+.service-info p {
+  font-size: 13px;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+
+/* Ajustar el icono */
+/* Estilo por defecto (modo claro) */
+.service-info span {
+    color: #333; /* Color normal en modo claro */
+}
+
+/* Cuando está en modo oscuro */
+body.dark-mode .service-info span {
+    color: #ffffff !important; /* Rojo en modo oscuro */
+}
+
+  /* Estilos para los títulos dentro de cada contenedor */
+.titulo-servicio {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #556270;
+  text-transform: uppercase;
+}
+/* Contenedor para Servicios Petroleros */
+.contenedor-servicios-petroleros {
+  width: 100%;
+  max-width: 16000px;
+  margin: 40px auto;
+  padding: 40px 20px;
+  background: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.contenedor-servicios-petroleros .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centrar los elementos */
+  align-items: center;
+  gap: 300x; /* Añade espacio entre los elementos */
+}
+/* Línea roja debajo del título */
+.linea-roja {
+  width: 200px;
+  height: 1px;
+  background-color: #CC0001;
+  margin: 0 auto 25px auto;
+  border-radius: 2px;
+}
+/* Contenedor para Servicios de Construcción */
+.contenedor-servicios-construccion {
+  width: 100%;
+  max-width: 16000px;
+  margin: 40px auto;
+  padding: 40px 20px;
+  background: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.contenedor-servicios-construccion .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centrar los elementos */
+  align-items: center;
+  gap: 300x; /* Añade espacio entre los elementos */
+}
+/* Ajuste para los íconos */
+.service-content i {
+  font-size: 40px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Ajuste para los títulos */
+.service-content h4 {
+  font-size: 20px;
+  margin: 0;
+}
+
+  
+  .service-box {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.658);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .service-box:hover {
+    transform: scale(1.05);
+  }
+
+  .service-video {
+    width: 100% ;
+    height: 365px; /* Ajuste de altura */
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .service-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 30%; /* Baja un poco el encuadre del video */
+  filter: contrast(1.2) brightness(1.1) saturate(1.3); /* Mejora calidad visual */
+}
+
+
+  /* Ícono de Play en el centro */
+  .play-icon {
+    position: absolute; /* Ubica el botón sobre el video */
+    top: 50%; /* Lo centra verticalmente */
+    left: 50%; /* Lo centra horizontalmente */
+    transform: translate(-50%, -50%); /* Asegura que esté perfectamente centrado */
+    font-size: 50px; /* Aumenta el tamaño del icono */
+    color: rgb(255, 255, 255); /* Hace que sea visible */
+    cursor: pointer; /* Hace que sea clickeable */
+    z-index: 99 !important; /* Lo pone por encima de todos los elementos */
+    background: rgba(255, 0, 0, 0.5); /* Fondo semitransparente */
+    padding: 20px;
+    border-radius: 50%;
+    width: 80px; /* Ancho igual a la altura */
+    height: 80px; /* Alto igual al ancho */
+    display: flex; /* Asegura que el icono esté visible */
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease-in-out; /* Suaviza la aparición/desaparición */
+}
+
+
+
+/* Capa oscura semitransparente para mejorar legibilidad */
+.service-video::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.253); /* Oscurece un poco el video para más contraste */
+  pointer-events: none;
+}
+  .service-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta el video sin distorsión */
+  }
+  /* Estilo por defecto en pantallas grandes */
+  .client-logo img {
+    transform: scale(1.3); /* Aumenta un poco */
+    transition: transform 0.3s ease-in-out;
+  }
+
+  /* 🟢 Ajuste para pantallas pequeñas (menos de 768px) */
+  @media (max-width: 768px) {
+    .client-logo img {
+      transform: scale(1); /* Restaura su tamaño normal */
+    }
+  }
+
+
+  .service-content {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    color: white;
+    position: relative;
+  }
+
+  .service-content .icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .service-content h4 {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  /* Estilos para los servicios específicos */
+  .services-list {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ffffff; /* Borde rojo fino */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Efecto hover en el encuadre */
+.services-list:hover {
+  transform: scale(1.02);
+}
+.mision-vision-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.mision-box, .vision-box {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  background: rgba(0, 0, 0, 0.705);
+  backdrop-filter: blur(8px);
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto de color diagonal al pasar el cursor */
+.mision-box::before, .vision-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255, 17, 0, 0.5), rgba(255, 17, 0, 0.5));
+  transition: width 0.4s ease-in-out;
+}
+
+.mision-box:hover::before, .vision-box:hover::before {
+  width: 100%;
+}
+
+.mision-box:hover, .vision-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(255, 0, 0, 0.4);
+}
+
+/* Asegurar que el contenido se mantenga visible */
+
+
+
+
+
+
+
+/* 🔹 Contenedor Principal */
+.mision-vision-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+/* 🔹 Diseño Inicial: Icono + Texto */
+.mision-box, .vision-box {
+  width: 120px;
+  height: 120px;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 15px;
+}
+
+/* 🔹 Expansión al hacer clic */
+.mision-box.active, .vision-box.active {
+  width: 350px;
+  height: auto;
+  backdrop-filter: none !important; /* 🔹 Quitar el blur al expandirse */
+
+  padding: 25px;
+}
+
+/* 🔹 Efecto de color diagonal al pasar el mouse */
+.mision-box::before, .vision-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255, 0, 0, 0.15), rgba(255, 0, 0, 0.3));
+  transition: width 0.4s ease-in-out;
+  pointer-events: none;
+}
+
+/* 🔹 Aplicar efecto solo cuando NO está expandido */
+.mision-box:not(.active):hover::before,
+.vision-box:not(.active):hover::before {
+  width: 100%;
+}
+
+/* 🔹 Quitar el efecto completamente cuando está expandido */
+.mision-box.active::before,
+.vision-box.active::before {
+  width: 0 !important;
+  display: none;
+}
+
+/* 🔹 Icono */
+.icon-container {
+  background: rgba(255, 0, 0, 0.8);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 24px;
+  color: white;
+  transition: background 0.3s;
+}
+
+/* 🔹 Cambio de color en hover */
+.mision-box:not(.active):hover .icon-container,
+.vision-box:not(.active):hover .icon-container {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* 🔹 Texto inicial: "MISIÓN" y "VISIÓN" */
+.mision-title, .vision-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+/* 🔹 Ocultar contenido expandido por defecto */
+.mision-text, .vision-text {
+  display: none;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+/* 🔹 Mostrar contenido al expandirse */
+.mision-box.active .mision-text, .vision-box.active .vision-text {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .service-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    margin: 15px auto; /* Más separación entre tarjetas */
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    max-width: 900px; /* Asegurar tamaño uniforme */
+    min-height: 180px;
+  }
+
+  .service-item i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #CC0001;
+  }
+
+  .service-item span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  .btn-ver-mas {
+  display: inline-block;
+  background-color: #d9232d; /* Mismo color que otros botones */
+  color: white !important; /* Forzar texto blanco */
+  padding: 8px 10px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+  font-size: 17px; /* Reducir tamaño de letra */
+
+}
+
+.btn-ver-mas:hover {
+  background-color: #a71e23; /* Color más oscuro al pasar el mouse */
+  transform: scale(1.05);
+  color: white !important; /* Asegurar que el texto siga siendo blanco */
+}
+
+
+
+  /* Sección General */
+/* 🌟 Modo Claro */
+.work-with-us {
+    padding: 80px 0;
+    background: #ffffff;
+    border-top: 50px solid #f2f4f6;
+}
+
+/* 🌙 Modo Oscuro */
+body.dark-mode .work-with-us {
+    background: #000000;
+    border-top: 50px solid #111111;
+}
+
+  .work-with-us .section-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .work-with-us .lead {
+    font-size: 18px;
+    color: #444;
+  }
+
+  .work-with-us .btn-primary {
+    background-color: #CC0001;
+    border-color: #CC0001;
+    font-size: 18px;
+    padding: 12px 25px;
+    border-radius: 8px;
+  }
+
+  .work-with-us .btn-primary:hover {
+    background-color: #a71e23;
+    border-color: #a71e23;
+  }
+
+  .card.card-body {
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+  }
+
+  .card.card-body h3 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #CC0001;
+  }
+
+  /* Modo oscuro */
+  body.dark-mode .work-with-us {
+    background: #222;
+    color: #ddd; /* Texto gris claro */
+  }
+
+  body.dark-mode .section-title {
+    color: #fff;
+  }
+
+  body.dark-mode .lead {
+    color: #bbb; /* Gris claro */
+  }
+
+  body.dark-mode .card.card-body {
+    background: #333;
+    color: #ddd;
+    border: 1px solid #555;
+  }
+
+  body.dark-mode .form-control {
+    background: #444;
+    color: #ddd;
+    border: 1px solid #666;
+  }
+
+  body.dark-mode .btn-primary {
+    background-color: #ff4747;
+    border-color: #ff4747;
+  }
+
+  body.dark-mode .btn-primary:hover {
+    background-color: #cc0001;
+    border-color: #cc0001;
+  }
+
+  /* Imagen con borde redondeado */
+  .work-with-us img {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .botones-categorias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .boton-categoria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 18px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    min-width: 250px;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .boton-categoria i {
+    font-size: 20px;
+  }
+  
+  .boton-categoria:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, rgba(226, 4, 4, 0.219), rgba(255, 38, 0, 0.315));
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Habilitar desplazamiento suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Contenedor Principal */
+.sostenibilidad-section-unique {
+  padding: 60px 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+/* Título */
+.sostenibilidad-title-unique {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #556270 !important;
+}
+
+.sostenibilidad-subtitle-unique {
+  font-size: 1.2rem;
+  color: #666 !important;
+  margin-bottom: 30px;
+}
+
+/* 🔹 Contenedor de las tarjetas alineadas horizontalmente */
+.sostenibilidad-row-unique {
+  display: flex;
+  justify-content: center; /* Centra las tarjetas horizontalmente */
+  align-items: stretch; /* Asegura que todas las tarjetas tengan la misma altura */
+  gap: 20px; /* Espacio entre tarjetas */
+  flex-wrap: nowrap; /* No permite que las tarjetas se vayan abajo */
+}
+
+/* 🔹 Tarjetas con Altura y Tamaño Uniforme */
+.sostenibilidad-card-unique {
+  background: #fff4f444;
+  padding: 20px;
+  border-radius: 50px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-align: center;
+  flex: 1; /* Hace que todas tengan el mismo tamaño */
+  min-width: 280px;
+  max-width: 330px;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sostenibilidad-card-unique:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔹 Íconos */
+.sostenibilidad-icon-unique {
+  font-size: 40px;
+  color: #d32f2f;
+  margin-bottom: 15px;
+}
+
+/* 🔹 Texto dentro de las tarjetas */
+.sostenibilidad-card-unique h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #566370;
+}
+.article {
+  margin-bottom: 50px; /* Espacio entre noticias */
+}
+/* Estilos para las imágenes de los posts */
+.article .post-img img {
+  filter: grayscale(40%) contrast(110%) brightness(90%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Efecto al pasar el mouse */
+.article .post-img img:hover {
+  filter: grayscale(0%) contrast(120%) brightness(100%);
+  transform: scale(1.05); /* Pequeño zoom */
+}
+.search-results {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0;
+  border: 1px solid #ccc;
+  background: #fff;
+  max-height: 200px;
+  overflow-y: auto;
+  display: none;
+  position: absolute;
+  width: calc(100% - 22px);
+  z-index: 1000;
+}
+
+.search-result-item {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+
+.search-result-item:hover {
+  background-color: #f1f1f1;
+}
+
+
+.sostenibilidad-card-unique p {
+  font-size: 1rem;
+  color: #444;
+  flex-grow: 1;
+}
+
+/* 🌙 Modo Oscuro */
+body.dark-mode .sostenibilidad-section-unique {
+  background-color: #1a1a1a !important;
+}
+
+body.dark-mode .sostenibilidad-title-unique,
+body.dark-mode .sostenibilidad-card-unique h3 {
+  color: white !important;
+}
+
+body.dark-mode .sostenibilidad-subtitle-unique,
+body.dark-mode .sostenibilidad-card-unique p {
+  color: #ccc !important;
+}
+
+body.dark-mode .sostenibilidad-card-unique {
+  background: #222 !important;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1) !important;
+}
+
+body.dark-mode .sostenibilidad-card-unique:hover {
+  box-shadow: 0px 6px 15px rgba(245, 2, 2, 0.719) !important;
+}
+
+body.dark-mode .sostenibilidad-icon-unique {
+  color: #ff4c4c !important;
+}
+
+/* 📱 Diseño Responsivo: En pantallas pequeñas, las tarjetas se apilan */
+@media (max-width: 992px) {
+  .sostenibilidad-row-unique {
+      flex-wrap: wrap; /* Permite que las tarjetas se acomoden en filas */
+  }
+  .sostenibilidad-card-unique {
+      flex: 1 1 45%; /* Para que al menos 2 tarjetas se mantengan en una fila */
+  }
+}
+
+@media (max-width: 768px) {
+  .sostenibilidad-row-unique {
+      flex-direction: column; /* En pantallas muy pequeñas, las tarjetas se ponen en columna */
+  }
+}

@@ -26,60 +26,80 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/main2.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Sailor
-  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+
+
 </head>
 
-<body class="team-page">
+<body class="index-page">
 
-  <header id="header" class="header d-flex align-items-center sticky-top">
+  <header id="header" class="header d-flex align-items-center justify-content-between sticky-top">
+<!-- Contenedor de botones -->
+<div id="button-container" class="d-flex align-items-center gap-2">
+  <button id="language-toggle" class="language-toggle btn btn-light p-2">
+    <i class="bi bi-globe"></i> <span id="language-text">ES</span>
+  </button>
+  <button id="theme-toggle" class="theme-toggle btn btn-light p-2">
+    <i id="theme-icon" class="bi bi-moon-fill"></i>
+  </button>
+</div>
+
+
+
+  
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      
+
+
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1 class="sitename d-flex align-items-center">
-          <img src="assets/img/hll.jpeg" alt="Logo HLL" style="max-width: 150px; height: auto; margin-right: 10px;">
-          <span style="font-weight: bold; font-size: 16px; border-bottom: 2px solid red; padding-bottom: 3px;">
-              Líderes Imparables
-          </span>
+            <img src="assets/img/hll2.png" alt="Logo HLL" style="max-width: 150px; height: auto; margin-right: 10px;">
+            <span id="lideres-texto" class="texto-lideres"
+                style="font-size: clamp(12px, 2vw, 18px); font-weight: bold; border-bottom: 2px solid red; padding-bottom: 3px; color: rgb(70, 64, 64);"
+                data-lang="es:Líderes Imparables,en:Unstoppable Leaders">
+                Líderes Imparables
+            </span>
+        
       </h1>
+      
+      
       
             </a>
 
             <nav id="navmenu" class="navmenu">
               <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li class="dropdown"><a href="about.html" class="active"><span>Nosotros</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                    <li><a href="team.html">Equipo de trabajo</a></li>
-                   <!-- <li><a href="testimonials.html">Testimonials</a></li>-->
-                    
-                  </ul>
+                <li><a href="index.html" data-lang="es:Inicio,en:Home">Inicio</a></li>   
+                             
+                <li><a href="about.html" ><span data-lang="es:Nosotros,en:About Us">Nosotros</i></a>
+                  <!--<ul>
+                  <li><a href="team.html" data-lang="es:Equipo de trabajo,en:Team">Equipo de trabajo</a></li>                    
+                  </ul>-->
                 </li>
-                <li class="dropdown"><a href="services.html" class="active"><span>Servicios</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <li class="dropdown"><a href="services.html"  ><span data-lang="es:Servicios,en:Services">Servicios</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                <!-- <li><a href="services.html">Servicios</a></li>-->
                <ul>
-                <li><a href="services.html">Servicio Petroleros</a></li>
-                <li><a href="servicesconstruccion.html">Servicios De Construcción</a></li>
+                <li><a href="services.html" data-lang="es:Servicio Petroleros,en:Oil Services">Servicio Petroleros</a></li>
+                <li><a href="servicesconstruccion.html" data-lang="es:Servicios de Obra Civil,en:Civil Works Services.">Servicios de Obra Civil.</a></li>
+                <li><a href="serviceselectricos.html" data-lang="es:Servicios Electrónicos,en:Electronic Services">Servicios Electrónicos</a></li>
+
                <!-- <li><a href="testimonials.html">Testimonials</a></li>-->
                 
               </ul>
-          <li><a href="portfolio.html">Portafolio</a></li>
-         <!--  <li><a href="pricing.html">Precios</a></li>-->
+          <li><a href="portfolio.html" data-lang="es:Portafolio,en:Portfolio">Portafolio</a></li>
+         <li><a href="políticassig.html" data-lang="es:Políticas,en:Policies">Políticas>Políticas</a></li>
+         <li><a href="noticeshll.html" data-lang="es:Noticias,en:News">Noticias</a></li>
+
          <!-- <li><a href="blog.html">Blog</a></li>-->
           <!-- <li><a href="contact.html">Contacto</a></li>-->
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="contact.html">Contactanos</a>
+      <a class="btn-getstarted" href="contact.html" data-lang="es:Contactanos,en:Contact Us">Contactanos</a>
+
+
 
     </div>
   </header>
@@ -89,11 +109,11 @@
     <!-- Page Title -->
     <div class="page-title light-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Políticas</h1>
+        <h1 class="mb-2 mb-lg-0" data-lang="es:Políticas SGI,en:SGI Policies">Políticas SGI</h1>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="index.html">Inicio</a></li>
-            <li class="current">Políticas</li>
+            <li><a href="index.html" data-lang="es:Inicio,en:Home">Políticas SGI</a></li>
+            <li class="current" data-lang="es:Políticas SGI,en:SGI Policies">Políticas SGI</li>
           </ol>
         </nav>
       </div>
@@ -105,23 +125,52 @@
 
         <div class="row gy-4">
           <div class="container section-title" data-aos="fade-up">
-            <h2>Políticas</h2>
-            <p>Políticas de la Empresa<br></p>
+            <h2 data-lang="es:Políticas,en:Policies">Políticas</h2>
+            <p data-lang="es:Políticas SGI,en:SGI Policies">Políticas SGI <br></p>
           </div><!-- End Section Title -->
 
-          <p class="section-subtitle" style="color: #333; text-align: justify;">
-            En la compañía <strong>Herrera Llori Cía. Ltda.</strong>, nos comprometemos a prestar servicios especializados en 
-            <strong>Spooler, Banding, Instalación de Protectores y Reparación de Cable Electrosumergible</strong> 
-            para la industria petrolera a nivel nacional. Nuestro objetivo es garantizar la más alta calidad en cada uno de nuestros procesos, 
-            asegurando la eficiencia y confiabilidad de nuestras operaciones. Como empresa líder en el sector, asumimos con responsabilidad nuestro compromiso con la seguridad y salud de las personas, 
-            la protección del medio ambiente y la excelencia en la calidad de nuestros servicios. 
-            Nuestra gestión se orienta hacia la implementación de procesos eficientes, tecnología de vanguardia 
-            y una cultura de mejora continua que nos permite ofrecer soluciones innovadoras y sostenibles.
+          <p class="dark-text section-subtitle" style="color: #333; text-align: justify;"data-lang="es:En la compañía Herrera Llori Cía. Ltda.., se compromete a conducir sus actividades de
+            “Servicio de Spooler para recuperar y bajar cable eléctrico de equipo BES y tubo capilar externo,
+            instalar/desinstalar protectores de cable, mid joint o instalación/desinstalación de bandas. Servicio de
+            inspección y reparación, Instalación de coraza y Servicio de suelda por electro fusión de cable de
+            potencia y capilar provenientes de los campos, para la Industria Petrolera”
+            dentro de su contexto organizacional y a las partes interesadas, equipos, productos y soporte técnico,
+            ofreciendo como política las mejores condiciones de trabajo y de recursos, buscando la salud y
+            seguridad de los empleados y su relación responsable con el ambiente, cumpliendo a cabalidad con las
+            regulaciones y normas de la legislación y de nuestros clientes, tanto en Salud Ocupacional, Higiene,
+            Seguridad, Control Ambiental y Calidad, aplicando un mejoramiento continuo de las condiciones
+            integrales de trabajo, para lo que compromete los recursos tanto humanos como financieros necesarios
+            de manera sostenible y sustentable para lograr metas destacadas en la industria, entregando los
+            servicios con calidad, sin accidentes y respetando al ambiente, convirtiéndose así en un vecino amigable
+            con la comunidad.,en:Herrera Llori Cía. Ltda., we are committed to carrying out our activities in
+            “Spooler Service to recover and lower electrical cable from BES equipment and external capillary tube,
+            install/uninstall cable protectors, mid joint, or install/uninstall bands. Inspection and repair service,
+            Armor installation, and Electrofusion welding service for power and capillary cables from the fields, for
+            the Oil Industry.”
+            Within our organizational context and to our stakeholders, teams, products, and technical support,
+            we offer the best working conditions and resources, ensuring employee health and safety
+            and environmental responsibility, fully complying with legal regulations and client standards in
+            Occupational Health, Hygiene, Safety, Environmental Control, and Quality, applying continuous
+            improvement to working conditions, and sustainably committing both human and financial resources
+            to achieve outstanding industry goals, delivering quality services without accidents while respecting the
+            environment, becoming a friendly neighbor to the community.">En la compañía <strong>Herrera Llori Cía. Ltda.</strong>., se compromete a conducir sus actividades de
+            “Servicio de Spooler para recuperar y bajar cable eléctrico de equipo BES y tubo capilar externo,
+            instalar/desinstalar protectores de cable, mid joint o instalación/desinstalación de bandas. Servicio de
+            inspección y reparación, Instalación de coraza y Servicio de suelda por electro fusión de cable de
+            potencia y capilar provenientes de los campos, para la Industria Petrolera”
+            dentro de su contexto organizacional y a las partes interesadas, equipos, productos y soporte técnico,
+            ofreciendo como política las mejores condiciones de trabajo y de recursos, buscando la salud y
+            seguridad de los empleados y su relación responsable con el ambiente, cumpliendo a cabalidad con las
+            regulaciones y normas de la legislación y de nuestros clientes, tanto en Salud Ocupacional, Higiene,
+            Seguridad, Control Ambiental y Calidad, aplicando un mejoramiento continuo de las condiciones
+            integrales de trabajo, para lo que compromete los recursos tanto humanos como financieros necesarios
+            de manera sostenible y sustentable para lograr metas destacadas en la industria, entregando los
+            servicios con calidad, sin accidentes y respetando al ambiente, convirtiéndose así en un vecino amigable
+            con la comunidad.
           </p>
           
-          <p style="color: #333; text-align: justify;">
-            En este contexto, hemos desarrollado nuestra <strong>Política Integrada</strong>, fundamentada en los siguientes principios estratégicos, 
-            con el propósito de garantizar el cumplimiento de los más altos estándares de calidad, seguridad y sostenibilidad en todas nuestras actividades.
+          <p class="dark-text" style="color: #333; text-align: justify" data-lang="es:Los principios de nuestro compromiso se fundamentan en: ,en:The principles of our commitment are based on:">Los principios de nuestro compromiso se fundamentan en: 
+
           </p>
           
     
@@ -140,7 +189,8 @@
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionPoliticas">
               <div class="accordion-body" style="background-color: #f8f9fa; color: #333;">
-                Implementación de programas y estrategias integradas de calidad, medio ambiente, salud y seguridad.
+                Implementación de programas y estrategias integradas de calidad, medio
+ambiente, salud.
               </div>
             </div>
           </div>
@@ -158,7 +208,8 @@
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionPoliticas">
               <div class="accordion-body" style="background-color: #f8f9fa; color: #333;">
-                Desarrollo de planes de comunicación del Sistema de Gestión Integrado a empleados, contratistas y grupos de interés.
+                Desarrollo de planes de comunicación de su Sistema de Gestión
+Integrado a empleados, contratistas y grupos de interés.
               </div>
             </div>
           </div>
@@ -194,7 +245,7 @@
             </h2>
             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionPoliticas">
               <div class="accordion-body" style="background-color: #f8f9fa; color: #333;">
-                Disponer de equipos y herramientas de alta tecnología que aporten un mayor desempeño en la prestación de servicios.
+                Disponer de equipos y herramientas de alta tecnología que aporten un mayor desempeño en la prestación de servicios. 
               </div>
             </div>
           </div>
@@ -216,17 +267,88 @@
               </div>
             </div>
           </div>
-        
-        </div>
-        
-    
-        <div class="text-center mt-4">
-          <p style="color: #333;">
-            <strong>La alta dirección de la compañía Herrera Llori</strong> se compromete a asegurar que la Política de Calidad, Medio Ambiente, Seguridad y Salud Ocupacional, 
-            sea conocida, entendida e implementada en todos los niveles de las áreas involucradas en el alcance del Sistema Integrado de Gestión.
-          </p>
-        </div>
+          <!-- Recursos Naturales -->
+  <div class="accordion-item" style="border: 1px solid #d9232d; margin-bottom: 5px;">
+    <h2 class="accordion-header" id="headingSix">
+      <button class="accordion-button collapsed" 
+      style="background-color: #d9232d; color: white; font-weight: bold; border: 1px solid #d9232d; outline: none; box-shadow: none;" 
+      type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" 
+        aria-expanded="false" aria-controls="collapseSix">
+        Recursos Naturales
+      </button>
+    </h2>
+    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionPoliticas">
+      <div class="accordion-body" style="background-color: #f8f9fa; color: #333;">
+        Uso racional y sustentable de los recursos naturales, aplicando las mejores prácticas ambientales.
       </div>
+    </div>
+  </div>
+
+  <!-- Reducción -->
+  <div class="accordion-item" style="border: 1px solid #d9232d; margin-bottom: 5px;">
+    <h2 class="accordion-header" id="headingSeven">
+      <button class="accordion-button collapsed" 
+      style="background-color: #d9232d; color: white; font-weight: bold; border: 1px solid #d9232d; outline: none; box-shadow: none;" 
+      type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" 
+        aria-expanded="false" aria-controls="collapseSeven">
+        Reducción
+      </button>
+    </h2>
+    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionPoliticas">
+      <div class="accordion-body" style="background-color: #f8f9fa; color: #333;">
+        Prevención de la contaminación, reducción de residuos y correcta disposición mediante reciclaje.
+      </div>
+    </div>
+  </div>
+
+  <!-- Prevención -->
+  <div class="accordion-item" style="border: 1px solid #d9232d; margin-bottom: 5px;">
+    <h2 class="accordion-header" id="headingEight">
+      <button class="accordion-button collapsed" 
+      style="background-color: #d9232d; color: white; font-weight: bold; border: 1px solid #d9232d; outline: none; box-shadow: none;" 
+      type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" 
+        aria-expanded="false" aria-controls="collapseEight">
+        Prevención
+      </button>
+    </h2>
+    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionPoliticas">
+      <div class="accordion-body" style="background-color: #f8f9fa; color: #333;">
+        Promoción de la salud y prevención de riesgos laborales, garantizando un ambiente seguro.
+      </div>
+    </div>
+  </div>
+
+  <!-- Competencia -->
+  <div class="accordion-item" style="border: 1px solid #d9232d; margin-bottom: 5px;">
+    <h2 class="accordion-header" id="headingNine">
+      <button class="accordion-button collapsed" 
+      style="background-color: #d9232d; color: white; font-weight: bold; border: 1px solid #d9232d; outline: none; box-shadow: none;" 
+      type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" 
+        aria-expanded="false" aria-controls="collapseNine">
+        Competencia
+      </button>
+    </h2>
+    <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionPoliticas">
+      <div class="accordion-body" style="background-color: #f8f9fa; color: #333;">
+        Capacitación continua en calidad, transporte, seguridad y medio ambiente para formar personal competente y comprometido.
+      </div>
+    </div>
+  </div>
+
+
+          
+  <div class="text-center mt-4">
+    <h2 class="titulo-certificados">CERTIFICADOS</h2>
+    <!-- Resto del contenido -->
+  </div>
+  
+  <div class="d-flex justify-content-center mt-3">
+    <a href="assets/dcc/9k.pdf" target="_blank" class="btn-politica">ISO 9001:2015</a>
+    <a href="assets/dcc/14k.pdf" target="_blank" class="btn-politica">ISO 14001:2015</a>
+    <a href="assets/dcc/45k.pdf" target="_blank" class="btn-politica">ISO 45001:2018</a>
+  </div>
+  </div>
+  
     </section>
     
     <!-- Incluir Bootstrap para que funcione el acordeón -->

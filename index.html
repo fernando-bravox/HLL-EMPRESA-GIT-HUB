@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>HLL</title>
+  <title>HLL Herrera Llori CIA. LTDA</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -26,61 +26,82 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/main2.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Sailor
-  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+
+
 </head>
 
 <body class="index-page">
 
-  <header id="header" class="header d-flex align-items-center sticky-top">
+  <header id="header" class="header d-flex align-items-center justify-content-between sticky-top">
+<!-- Contenedor de botones -->
+<div id="button-container" class="d-flex align-items-center gap-2">
+  <button id="language-toggle" class="language-toggle btn btn-light p-2">
+    <i class="bi bi-globe"></i> <span id="language-text">ES</span>
+  </button>
+  <button id="theme-toggle" class="theme-toggle btn btn-light p-2">
+    <i id="theme-icon" class="bi bi-moon-fill"></i>
+  </button>
+</div>
+
+
+
+  
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      
+
+
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1 class="sitename d-flex align-items-center">
-          <img src="assets/img/hll.jpeg" alt="Logo HLL" style="max-width: 150px; height: auto; margin-right: 10px;">
-          <span style="font-weight: bold; font-size: 16px; border-bottom: 2px solid red; padding-bottom: 3px;">
-              Líderes Imparables
-          </span>
+            <img src="assets/img/hll2.png" alt="Logo HLL" style="max-width: 150px; height: auto; margin-right: 10px;">
+            <span id="lideres-texto" class="texto-lideres"
+                style="font-size: clamp(12px, 2vw, 18px); font-weight: bold; border-bottom: 2px solid red; padding-bottom: 3px; color: rgb(70, 64, 64);"
+                data-lang="es:Líderes Imparables,en:Unstoppable Leaders">
+                Líderes Imparables
+            </span>
+        
       </h1>
+      
       
       
             </a>
 
             <nav id="navmenu" class="navmenu">
               <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li class="dropdown"><a href="about.html" class="active"><span>Nosotros</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                    <li><a href="team.html">Equipo de trabajo</a></li>
-                   <!-- <li><a href="testimonials.html">Testimonials</a></li>-->
-                    
-                  </ul>
+                <li><a href="index.html" data-lang="es:Inicio,en:Home">Inicio</a></li>   
+                             
+                <li><a href="about.html" ><span data-lang="es:Nosotros,en:About Us">Nosotros</i></a>
+                    <!--<ul>
+                    <li><a href="team.html" data-lang="es:Equipo de trabajo,en:Team">Equipo de trabajo</a></li>                    
+                    </ul>-->
                 </li>
-                <li class="dropdown"><a href="services.html" class="active"><span>Servicios</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <li class="dropdown"><a href="services.html"  ><span data-lang="es:Servicios,en:Services">Servicios</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                <!-- <li><a href="services.html">Servicios</a></li>-->
                <ul>
-                <li><a href="services.html">Servicio Petroleros</a></li>
-                <li><a href="servicesconstruccion.html">Servicios De Construcción</a></li>
+                <li><a href="services.html" data-lang="es:Servicio Petroleros,en:Oil Services">Servicio Petroleros</a></li>
+                <li><a href="servicesconstruccion.html" data-lang="es:Servicios de Obra Civil,en:Civil Works Services.">Servicios de Obra Civil.</a></li>
+                <li><a href="serviceselectricos.html" data-lang="es:Servicios Electrónicos,en:Electronic Services">Servicios Electrónicos</a></li>
+
                <!-- <li><a href="testimonials.html">Testimonials</a></li>-->
                 
               </ul>
-          <li><a href="portfolio.html">Portafolio</a></li>
-         <li><a href="políticassig.html">Políticas</a></li>
+          <li><a href="portfolio.html" data-lang="es:Portafolio,en:Portfolio">Portafolio</a></li>
+
+         <li><a href="políticassig.html" data-lang="es:Políticas,en:Policies">Políticas>Políticas</a></li>
          <!-- <li><a href="blog.html">Blog</a></li>-->
           <!-- <li><a href="contact.html">Contacto</a></li>-->
+         <li><a href="noticeshll.html" data-lang="es:Noticias,en:News">Noticias</a></li>
+
         </ul>
+
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="contact.html">Contactanos</a>
+      <a class="btn-getstarted" href="contact.html" data-lang="es:Contactanos,en:Contact Us">Contactanos</a>
+
+
 
     </div>
   </header>
@@ -92,50 +113,155 @@
 
       <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
 
-        <div class="carousel-item active">
-          <video src="./assets/img/video5.mp4" autoplay loop muted playsinline class="w-100 h-100"
-          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; 
-                 filter: brightness(1.1) contrast(1.3) saturate(1.5);">
-          Tu navegador no soporta videos HTML5.
-        </video>
-           <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.4);"></div>
+<div class="carousel-item active">
+  <video src="./assets/img/video5.mp4" autoplay loop muted playsinline class="w-100 h-100"
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; 
+           filter: brightness(1.3) contrast(1.5) saturate(1.7);">
+    Tu navegador no soporta videos HTML5.
+  </video>
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.4);"></div>
 
-        <div class="carousel-container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; width: 90%; max-width: 800px;">
-          <h2 style="display: inline-block; text-align: center; max-width: 100%; word-wrap: break-word;">Líderes en Servicios Petroleros</h2>
-          <p style="text-align: center;">Soluciones en Spooler & Banding, instalación de cable electrosumergible y más.</p>
-          <div></div>Experiencia - Calidad - Confianza</p>
+  <div class="carousel-container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; width: 90%; max-width: 800px;">
+    <h2 data-lang="es:Más de 15 años de Experiencia en la Industria.,en:Over 15 years of Experience in the Industry."
+        style="display: inline-block; text-align: center; max-width: 100%; word-wrap: break-word;">
+      Líderes en Servicios Petroleros
+    </h2>
+    <p data-lang="es:Obras civiles, Spooler & Banding.,en:Civil works, Spooler & Banding.">
+      Obras civiles, Spooler & Banding.
+    </p>
+    
 
-          <a href="contact.html" class="btn-get-started" style="display: inline-block; margin-top: 10px;">Contactanos</a>
+    <div></div>
+
+    <!-- Botón Contáctanos -->
+    <a href="contact.html" class="btn-get-started" 
+       data-lang="es:Contactanos,en:Contact Us" 
+       style="display: inline-block; margin-top: 10px;">
+      Contactanos
+    </a>
+
+    <!-- Sección de Cuadros Animados -->
+    <div class="cuadros">
+      <div class="cuadro" data-aos="fade-up" data-aos-delay="100">
+        <i class="bi bi-award"></i>
+        <p data-lang="es:Experiencia,en:Experience">Experiencia</p>
       </div>
+      <div class="cuadro" data-aos="fade-up" data-aos-delay="200">
+        <i class="bi bi-star-fill"></i>
+        <p data-lang="es:Calidad,en:Quality">Calidad</p>
+      </div>
+      <div class="cuadro" data-aos="fade-up" data-aos-delay="300">
+        <i class="bi bi-shield-lock"></i>
+        <p data-lang="es:Confianza,en:Trust">Confianza</p>
+      </div>
+    </div>
+  </div>
+</div><!-- End Carousel Item -->
+
+
+  <div class="carousel-item">
+    <video src="assets/img/video3.mp4" autoplay loop muted playsinline class="w-100 h-100"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; 
+             filter: brightness(1.3) contrast(1.5) saturate(1.7);">
+      Tu navegador no soporta videos HTML5.
+    </video>     
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.4);"></div> 
+    
+    <div class="carousel-container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; width: 90%; max-width: 800px;">
+      <h2 data-lang="es:Tu satisfacción es nuestro compromiso,en:Your satisfaction is our commitment"
+          style="display: inline-block; text-align: center; max-width: 100%; word-wrap: break-word;">
+        Tu satisfacción es nuestro compromiso
+      </h2>
+  
+      <p data-lang="es:Reparación de cables con tecnología avanzada,en:Cable repair with advanced technology"
+         style="text-align: center;">
+        Reparación de cables con tecnología avanzada.
+      </p>
+  
+      <div></div>
+  
+      <!-- Botón Contáctanos -->
+      <a href="contact.html" class="btn-get-started" 
+         data-lang="es:Contactanos,en:Contact Us" 
+         style="display: inline-block; margin-top: 10px;">
+        Contactanos
+      </a>
+  
+      <!-- Sección de Cuadros Animados -->
+      <div class="cuadros">
+        <div class="cuadro" data-aos="fade-up" data-aos-delay="100">
+          <i class="bi bi-cash-stack"></i>
+          <p data-lang="es:Ahorro,en:Savings">Ahorro</p>
+        </div>
+        <div class="cuadro" data-aos="fade-up" data-aos-delay="200">
+          <i class="bi bi-bullseye"></i>
+          <p data-lang="es:Precisión,en:Precision">Precisión</p>
+        </div>
+        <div class="cuadro" data-aos="fade-up" data-aos-delay="300">
+          <i class="bi bi-shield-check"></i>
+          <p data-lang="es:Seguridad,en:Safety">Seguridad</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="carousel-item">
+    <video src="./assets/img/video35.mp4" autoplay loop muted playsinline class="w-100 h-100"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; 
+             filter: brightness(1.3) contrast(1.5) saturate(1.7);">
+      Tu navegador no soporta videos HTML5.
+    </video>     
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.4);"></div> 
+    
+    <div class="carousel-container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; width: 90%; max-width: 800px;">
       
-        </div><!-- End Carousel Item -->
+      <h2 data-lang="es:Trabajo Seguro y Preciso,en:Safe and Precise Work"
+          style="display: inline-block; text-align: center; max-width: 100%; word-wrap: break-word;">
+        Trabajo Seguro y Preciso
+      </h2>
+  
+      <p data-lang="es:Ejecutamos cada tarea con máxima eficiencia, garantizando innovación y calidad en cada servicio.,en:We execute each task with maximum efficiency, ensuring innovation and quality in every service.
 
-        <div class="carousel-item">
-          <video src="assets/img/video3.mp4" autoplay loop muted playsinline class="w-100 h-100"
-          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; 
-                 filter: brightness(1.1) contrast(1.3) saturate(1.5);">          Tu navegador no soporta videos HTML5.
-      </video>     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.4);"></div> 
-        <div class="carousel-container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; width: 90%; max-width: 800px;">
-            <h2 style="display: inline-block; text-align: center; max-width: 100%; word-wrap: break-word;">Eficiencia que Impulsa la Industria</h2>
-            <p style="text-align: center;">Capilares, protectores y reparación de cables con tecnología avanzada para reducir tiempos y costos.
-              <div></div>Rapidez - Precisión - Seguridad</p>
-            <a href="contact.html" class="btn-get-started" style="display: inline-block; margin-top: 10px;">Contactanos</a>
-        </div>
-        </div><!-- End Carousel Item -->
 
-        <div class="carousel-item">
-          <video src="./assets/img/video35.mp4" autoplay loop muted playsinline class="w-100 h-100"
-          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; 
-                 filter: brightness(1.1) contrast(1.3) saturate(1.5);">
-          Tu navegador no soporta videos HTML5.
-      </video>     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.4);"></div> 
-        <div class="carousel-container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; width: 90%; max-width: 800px;">
-            <h2 style="display: inline-block; text-align: center; max-width: 100%; word-wrap: break-word;">Trabajo Seguro y Preciso</h2>
-            <p style="text-align: center;">Ejecutamos cada tarea con máxima eficiencia, garantizando innovación y calidad en cada servicio.
-              <div></div>Innovación - Seguridad - Calidad</p>
-            <a href="contact.html" class="btn-get-started" style="display: inline-block; margin-top: 10px;">Contactanos</a>
+
+
+
+
+
+      "
+         style="text-align: center;">
+         Ejecutamos cada tarea con máxima eficiencia, garantizando innovación y calidad en cada servicio.
+      </p>
+   
+      <div></div>
+  
+      <!-- Botón Contáctanos -->
+      <a href="contact.html" class="btn-get-started" 
+         data-lang="es:Contactanos,en:Contact Us" 
+         style="display: inline-block; margin-top: 10px;">
+        Contactanos
+      </a>
+  
+      <!-- Sección de Cuadros Animados -->
+      <div class="cuadros">
+        <div class="cuadro" data-aos="fade-up" data-aos-delay="100">
+          <i class="bi bi-lightbulb"></i>
+          <p data-lang="es:Innovación,en:Innovation">Innovación</p>
         </div>
-        </div><!-- End Carousel Item -->
+        <div class="cuadro" data-aos="fade-up" data-aos-delay="200">
+          <i class="bi bi-speedometer2"></i>
+          <p data-lang="es:Eficiencia,en:Efficiency">Eficiencia</p>
+        </div>
+        <div class="cuadro" data-aos="fade-up" data-aos-delay="300">
+          <i class="bi bi-bricks"></i>
+          <p data-lang="es:Resistencia,en:Resilience">Resistencia</p>
+        </div>
+      </div>
+  
+    </div>
+  </div><!-- End Carousel Item -->
+  
 
         <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
           <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
@@ -156,41 +282,86 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Sobre Nosotros</h2>
-        <p>Quiénes Somos<br></p>
+        <h2 data-lang="es:Sobre Nosotros,en:About Us">Sobre Nosotros</h2>
+        <p data-lang="es:Quiénes Somos,en:Who We Are">Quiénes Somos<br></p>
       </div><!-- End Section Title -->
-
+    
       <div class="container">
-
         <div class="row gy-4">
-
+    
           <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-            <p style="text-align: justify; width: 95%; max-width: 700px; margin-left: 0;">
-              Somos H.LL. CIA. LTDA., una empresa ecuatoriana especializada en servicios petroleros. Nos enfocamos en Spooler & Banding, instalación y recuperación de cables electrosumergibles, capilares externos y mantenimiento industrial.
-          </p>
+            <p data-lang='{"es": "Somos Herrera Llori CIA. LTDA., una empresa ecuatoriana especializada en servicios petroleros. Nos enfocamos en Spooler para instalar y recuperar cable eléctrico de equipo BES y tubo capilar externo, instalar/desinstalar protectores de cable, mid joint o instalación/desinstalación de bandas. Servicio de inspección y reparación, Instalación de coraza y Servicio de suelda por electrofusión de cable de potencia y capilar provenientes de los campos, para la Industria Petrolera.", "en": "We are Herrera Llori CIA. LTDA., an Ecuadorian company specializing in oil services. We focus on Spooler to retrieve and lower electric cable from BES equipment and external capillary tubing, install/uninstall cable protectors, mid joint, or band installation/removal. We offer inspection and repair services, armor installation, and electrofusion welding for power and capillary cables from the fields, serving the oil industry."}'
+            style="text-align: justify; width: 95%; max-width: 700px; margin-left: 0;">
+             Somos Herrera Llori CIA. LTDA., una empresa ecuatoriana especializada en servicios petroleros.
+         </p>
+         
           
-
           
-
-          
+    
             <ul>
-              <li><i class="bi bi-check2-circle"></i> <span>Más de 15 años de experiencia en la industria.</span></li>
-              <li><i class="bi bi-check2-circle"></i> <span>Equipo técnico altamente capacitado.</span></li>
-              <li><i class="bi bi-check2-circle"></i> <span>Tecnología de vanguardia para cada proyecto.</span></li>
+              <li><i class="bi bi-check2-circle"></i> 
+                <span data-lang="es:Más de 15 años de experiencia en la industria.,en:Over 15 years of experience in the industry.">
+                  Más de 15 años de experiencia en la industria.
+                </span>
+              </li>
+              <li><i class="bi bi-check2-circle"></i> 
+                <span data-lang="es:Equipo técnico altamente capacitado.,en:Highly trained technical team.">
+                  Equipo técnico altamente capacitado.
+                </span>
+              </li>
+              <li><i class="bi bi-check2-circle"></i> 
+                <span data-lang="es:Tecnología de vanguardia para cada proyecto.,en:Cutting-edge technology for each project.">
+                  Tecnología de vanguardia para cada proyecto.
+                </span>
+              </li>
             </ul>
           </div>
-
+    
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <p style="text-align: justify; width: 95%; max-width: 700px; margin-left: 0;">
-            Nuestra experiencia y tecnología avanzada nos permiten ofrecer soluciones eficientes y seguras en el sector petrolero. Nos adaptamos a las necesidades de cada cliente con un enfoque de calidad y precisión.</p>
-            <a href="about.html" class="read-more"><span>Sobre Nosotros</span><i class="bi bi-arrow-right"></i></a>
+            <p data-lang='{"es": "Nuestra experiencia y tecnología avanzada nos permiten ofrecer soluciones eficientes y seguras en el sector petrolero. Nos adaptamos a las necesidades de cada cliente con un enfoque de calidad y precisión.", "en": "Our experience and advanced technology allow us to offer efficient and safe solutions in the oil sector. We adapt to each client&apos;s needs with a focus on quality and precision."}'
+            style="text-align: justify; width: 95%; max-width: 700px; margin-left: 0;">
+            Nuestra experiencia y tecnología avanzada nos permiten ofrecer soluciones eficientes y seguras en el sector petrolero. Nos adaptamos a las necesidades de cada cliente con un enfoque de calidad y precisión.
+         </p>
+         
+            <a href="about.html" class="read-more" data-lang="es:Sobre Nosotros,en:About Us">
+              <span>Sobre Nosotros</span><i class="bi bi-arrow-right"></i>
+            </a>
           </div>
-
+    
         </div>
-
       </div>
+<!-- Sección de Misión y Visión -->
+<section class="mision-vision-container">
+  
+  <!-- 🔹 Misión -->
+  <div class="mision-box" onclick="toggleContent(this)">
+    <div class="icon-container">
+      <i class="bi bi-flag"></i> <!-- Icono de misión -->
+    </div>
+    <div class="mision-title" data-lang="es:MISIÓN,en:MISSION">MISIÓN</div>
+    <div class="mision-text">
+      <p data-lang="es:Brindar soluciones innovadoras y eficientes en el sector petrolero y de construcción, garantizando calidad, seguridad y satisfacción a nuestros clientes.,en:​Providing innovative and efficient solutions in the oil and construction sectors, ensuring quality, safety, and client satisfaction.">Brindar soluciones innovadoras y eficientes en el sector petrolero y de construcción, garantizando calidad, seguridad y satisfacción a nuestros clientes.</p>
+    </div>
+  </div>
+
+  <!-- 🔹 Visión -->
+  <div class="vision-box" onclick="toggleContent(this)">
+    <div class="icon-container">
+      <i class="bi bi-eye"></i> <!-- Icono de visión -->
+    </div>
+    <div class="vision-title" data-lang="es:VISIÓN,en:VISION">VISIÓN</div>
+    <div class="vision-text">
+      <p data-lang="es:Ser líderes en el sector petrolero y de construcción a nivel nacional, destacándonos por nuestra excelencia, innovación y compromiso con el desarrollo sostenible.,en:To be leaders in the national oil and construction sectors, standing out for our excellence, innovation, and commitment to sustainable development.">Ser líderes en el sector petrolero y de construcción a nivel nacional, destacándonos por nuestra excelencia, innovación y compromiso con el desarrollo sostenible.</p>
+    </div>
+  </div>
+
+
+
+
+
 
     </section><!-- /About Section -->
+    
 
     <!-- Clients Section -->
     <section id="clients" class="clients section light-background">
@@ -231,78 +402,367 @@
 
 <!-- Sección de Selección de Servicios -->
 <section id="service-categories" class="services section">
-  <div class="container text-center section-title" data-aos="fade-up">
-    <p>Nuestros Servicios</p><br>
-    <li><span>Especializados en Spooler & Banding y construcción, brindamos soluciones eficientes y seguras para cada proyecto.</span></li>
-
-    <div class="row justify-content-center mt-4">
-      <!-- Botón Servicios Petroleros -->
-      <div class="col-12 col-md-5 mb-3" data-aos="fade-up" data-aos-delay="100">
-        <a href="services.html" class="service-box">
-          <div class="service-image" style="background-image: url('assets/img/servicespetrolion25.jpg');"></div>
-          <div class="service-content">
-            <i class="bi bi-fuel-pump icon"></i>
-            <h4 class="title">Servicios Petroleros</h4>
-          </div>
-        </a>
-      </div>
+  <div class="container text-start section-title" data-aos="fade-up">
+    <h2 data-lang="es:Servicios,en:Services">Servicios</h2>
+    <p data-lang="es:Servicios que ofrecemos para hacer la diferencia.,en:Services we offer to make a difference.">
+      Servicios que ofrecemos para hacer la diferencia.
+    </p>
     
-      <!-- Botón Servicios de Construcción -->
-      <div class="col-12 col-md-5 mb-3" data-aos="fade-up" data-aos-delay="200">
-        <a href="servicesconstruccion.html" class="service-box">
-          <div class="service-image" style="background-image: url('assets/img/servicioscontruccion.jpg');"></div>
-          <div class="service-content">
-            <i class="bi bi-building icon"></i>
-            <h4 class="title">Servicios de Construcción</h4>
+  </div>
+  
+  <div class="botones-categorias">
+    <a href="#Servicios-petrol" class="boton-categoria scroll-link" data-aos="fade-up" data-aos-delay="100">
+      <i class="bi bi-fuel-pump"></i>
+      <span data-lang="es:Servicios Petroleros,en:Oil Services">Servicios Petroleros</span>
+    </a>
+
+    <a href="#facilidades-construccion" class="boton-categoria scroll-link" data-aos="fade-up" data-aos-delay="200">
+      <i class="bi bi-bricks"></i>
+      <span data-lang="es:Servicios de Construcción,en:Construction Services">Servicios de Construcción</span>
+  </a>
+
+  <a href="#servicios-electricidad" class="boton-categoria scroll-link" data-aos="fade-up" data-aos-delay="300">
+    <i class="bi bi-lightning-charge"></i>
+    <span data-lang="es:Servicios de Electricidad,en:Electricity Services">Servicios de Electricidad</span>
+</a>
+
+  </div>
+  
+
+</div>
+  <div class="contenedor-servicios-petroleros">
+    <h3 class="titulo-servicio" data-lang="es:Servicios Petroleros,en:Oil Services">Servicios Petroleros</h3>
+    <div class="linea-roja"></div>
+
+    <div class="row">
+      <!-- Video a la izquierda -->
+      <div class="col-md-9" data-aos="fade-up" data-aos-delay="100">
+<!-- Contenedor del video del servicio -->
+<div class="service-video" style="position: relative;">
+  <video autoplay loop muted playsinline>
+      <source src="assets/img/serviciosh.mov" type="video/mp4">
+      Tu navegador no soporta el video.
+  </video>
+
+  <!-- Ícono de desplazamiento en el video del servicio -->
+  <div class="play-icon scroll-button-service">
+      <i class="bi bi-arrow-down-circle"></i>
+  </div>
+</div>
+          <a href="services.html" class="service-box">
+            <div class="service-content">
+                <i class="bi bi-fuel-pump icon"></i>
+                <h4 class="title" data-lang="es:Servicios Petroleros,en:Oil Services">Servicios Petroleros</h4>
+            </div>
+          </a>
           </div>
-        </a>
+          <div class="col-md-10" data-aos="fade-up" data-aos-delay="150">
+            <div class="row">
+<!-- Agrega esto dentro de tu HTML -->
+
+<!-- Modal (se mantiene oculto hasta que se activa) -->
+<div id="serviceModal" class="modal-overlay">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2 id="modal-title"></h2>
+    <p id="modal-description"></p>
+  </div>
+</div>
+
+<!-- Agrega esto dentro de tus servicios, en cada .service-item -->
+<div class="col-md-6 mb-3">
+  <div class="service-item" onclick="openModal('spooler')">
+    <div class="pic">
+      <img src="assets/img/petrol3.jpg" class="img-fluid" alt="Spooler and Banding">
+    </div>
+    <div class="service-info">
+      <h4 id="Servicios-petrol" data-lang="es:Spooler y Banding,en:Spooler and Banding">Spooler y Banding</h4>
+      <span data-lang="es:Instalamos, retiramos y ajustamos cables y protectores en sistemas de bombeo electrosumergible.,en:We install, remove, and adjust cables and protectors in submersible pump systems.">
+        Optimización en enrollado y postura de cable
+      </span>
+      <div class="icon"><i class="bi bi-gear-wide-connected"></i></div>
+    </div>
+  </div>
+</div>
+
+          
+<div class="col-md-6 mb-3">
+  <div class="service-item" onclick="openModal('reparacion')">
+    <div class="pic">
+      <img src="assets/img/petrol5.jpg" class="img-fluid" alt="Reparación de Cable">
+    </div>
+    <div class="service-info">
+      <h4 data-lang="es:Reparación de Cable,en:Cable Repair">Reparación de Cable</h4>
+      <span data-lang="es:Diagnóstico y Restauración Total.,en:Diagnosis and Full Restoration.">
+        Diagnóstico y Restauración Total.
+      </span>
+      <div class="icon"><i class="bi bi-tools"></i></div>
+    </div>
+  </div>
+</div>
+
+          
+<div class="col-md-6 mb-3">
+  <div class="service-item" onclick="openModal('acorazado')">
+    <div class="pic">
+      <img src="assets/img/petrol4.jpg" class="img-fluid" alt="Acorazado de Cable">
+    </div>
+    <div class="service-info">
+      <h4 data-lang="es:Acorazado de Cable,en:Cable Armoring">Acorazado de Cable</h4>
+      <span data-lang="es:Protección y durabilidad para entornos extremos.,en:Protection and durability for extreme environments.">
+        Protección y durabilidad para entornos extremos.
+      </span>
+      <div class="icon">
+        <i class="bi bi-shield-lock"></i>
       </div>
     </div>
   </div>
+</div>
+
+          
+<div class="col-md-6 mb-3">
+  <div class="service-item" onclick="openModal('electrofusion')">
+    <div class="pic">
+      <img src="assets/img/petrol6.jpg" class="img-fluid" alt="Empalmes por Electrofusión">
+    </div>
+    <div class="service-info">
+      <h4 data-lang="es:Empalmes por Electrofusión,en:Electrofusion Splices">Empalmes por Electrofusión</h4>
+      <span data-lang="es:Uniones seguras con electrofusión.,en:Secure electrofusion joints.">
+        Uniones de alta precisión
+      </span>
+      <div class="icon">
+        <i class="bi bi-lightning-charge"></i>
+      </div>
+    </div>
+  </div>
+</div>
+
+            </div>
+          </div>
+          
+    </div>
+  </div>
+
+  <!-- Contenedor para Servicios de Construcción -->
+<div class="contenedor-servicios-construccion">
+<h3 class="titulo-servicio" data-lang="es:Facilidades e Infraestructura Integral,en:Facilities and Comprehensive Infrastructure">
+    Facilidades e Infraestructura Integral
+</h3>
+  <div class="linea-roja"></div>
+
+  <div class="row">
+    <!-- Video a la izquierda -->
+    <div class="col-md-9" data-aos="fade-up" data-aos-delay="100">
+      <!-- Contenedor del video del servicio -->
+      <div class="service-video" style="position: relative;">
+        <video autoplay loop muted playsinline>
+            <source src="assets/img/serviciosh.mov" type="video/mp4">
+            Tu navegador no soporta el video.
+        </video>
+      
+        <!-- Ícono de desplazamiento en el video del servicio -->
+        <div class="play-icon scroll-button-service">
+            <i class="bi bi-arrow-down-circle"></i>
+        </div>
+      </div>
+                <a href="servicesconstruccion.html" class="service-box">
+                  <div class="service-content">
+                    <img src="assets/img/casco30.png" alt="Casco de construcción" class="icono-casco">
+                    <h4 class="title" data-lang="es:Servicios de Facilidades,en:Facility Services">Facilidades e Infraestructura Integral</h4>
+                  </div>
+                </a>
+                </div>
+                <div id="serviceModal" class="modal-overlay">
+                  <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-description"></p>
+                  </div>
+                </div>
+    <!-- Lista de Servicios (2 columnas) -->
+    <div class="col-md-10" data-aos="fade-up" data-aos-delay="150">
+      <div class="row">
+        <!-- Modal para Servicios de Construcción -->
+        <div id="serviceModalConstruccion" class="modal-overlay">
+          <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modal-title-construccion"></h2>
+            <p id="modal-description-construccion"></p>
+          </div>
+        </div>
+        <!-- Sección: Facilidades de Construcción -->
+        <h4 id="facilidades-construccion" class="subtitulo-servicio" data-lang="es:Área de Obra Civil.,en:Construction Area">
+          Facilidades de Construcción.
+      </h4>        <div class="linea-separadora"></div>
+        <!-- Obra Civil Petrolera y General -->
+        <div class="col-md-6 mb-3">
+          <div class="service-item" onclick="openModalConstruccion('mantenimiento')">
+            <div class="pic">
+              <img src="assets/img/facilidadconstruccion10.jpg" class="img-fluid" alt="Obra Civil Petrolera y General">
+            </div>
+            <div class="service-info">
+              <h4 data-lang="es:Obra Civil Petrolera y General,en:Petroleum and General Civil Works">
+                Obra Civil Petrolera y General
+              </h4>
+              <span data-lang="es:Construcción, Dirección y Supervisión de Obra.,en:Construction, Management, and Supervision of Works.">
+                Construcción, Dirección y Supervisión de Obra.
+               </span>
+               <div class="icon"><i class="bi bi-bricks"></i></div> <!-- 🏗️ Icono de construcción -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Diseño Arquitectónico e Interiorismo -->
+        <div class="col-md-6 mb-3">
+          <div class="service-item" onclick="openModalConstruccion('electricas')">
+            <div class="pic">
+              <img src="assets/img/facilidadconstruccion8.jpg" class="img-fluid" alt="IDiseño Arquitectónico e Interiorismo">
+            </div>
+            <div class="service-info">
+              <h4 data-lang="es:Diseño y Planificación Arquitectónica e Interiorismo,en:Architectural Design and Planning & Interior Design">Diseño Arquitectónico e Interiorismo</h4>
+              <span data-lang="es:Diseño de planos, modelado 3D y ambientación de espacios.,en:Blueprint design, 3D modeling, and space ambiance.">
+                Diseño de planos, modelado 3D y ambientación de espacios
+              </span>
+              <div class="icon"><i class="bi bi-tools"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Construcciones en Estructuras Metálicas -->
+        <div class="col-md-6 mb-3">
+          <div class="service-item" onclick="openModalConstruccion('fluidos')">
+            <div class="pic">
+              <img src="assets/img/facilidadconstruccion9.jpg" class="img-fluid" alt="Construcciones en Estructuras Metálicas">
+            </div>
+            <div class="service-info">
+              <h4 data-lang="es:Estructuras Metálicas,en:Metal Structures">Construcción en Estructuras Metálicas</h4>
+              <span data-lang="es:Mantenimiento de galpones y construcción de estructuras.,en:Maintenance of warehouses and structure construction.">
+                Mantenimiento de galpones y construcción de estructuras
+              </span>
+              <div class="icon"><i class="bi bi-building"></i></div> <!-- 🏗️ Icono de estructuras metálicas -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Apertura y Lastrado de Vías -->
+        <div class="col-md-6 mb-3">
+          <div class="service-item" onclick="openModalConstruccion('seguridad')">
+            <div class="pic">
+              <img src="assets/img/facilidadconstruccion7.jpg" class="img-fluid" alt="Apertura y Lastrado de Vías">
+            </div>
+            <div class="service-info">
+              <h4 data-lang="es:Apertura y Lastrado de Vías,en:Road Opening and Graveling">Apertura y Lastrado de Vías</h4>
+              <span data-lang="es:Construcción y habilitación de caminos en cualquier terreno.,en:Construction and enabling of roads in any terrain.">
+                Construcción y habilitación de caminos en cualquier terreno.
+              </span>
+              <div class="icon"><i class="bi bi-cone-striped"></i></div> <!-- 🚧 Icono de obras viales -->
+            </div>
+          </div>
+        </div>
+       <!-- Sección: Servicios de Electricidad -->
+<!-- Sección: Servicios de Electricidad -->
+<h4 id="servicios-electricidad" class="subtitulo-servicio" data-lang="es:Área de Servicios Eléctricos,en:Electrical Services Area">
+  Servicios de Electricidad
+</h4>
+<div class="linea-separadora"></div>
+
+<div class="row">
+  <!-- Instalaciones Eléctricas Comerciales e Industriales -->
+  <div class="col-md-6 mb-3">
+    <div class="service-item" onclick="openModalConstruccion('instalaciones-electricas')">
+      <div class="pic">
+        <img src="assets/img/facilidadconstruccion29.jpg" class="img-fluid" alt="Instalaciones Eléctricas Comerciales e Industriales">
+      </div>
+      <div class="service-info">
+        <h4 data-lang="es:Instalaciones-Eléctricas Comerciales e Industriales,en:Commercial and Industrial Electrical Installations">
+          Instalaciones Eléctricas Comerciales e Industriales
+        </h4>
+        <span data-lang="es:Estudio, diseño y construcción de instalaciones eléctricas en baja tensión.,en:Study, design, and construction of low-voltage electrical installations.">
+          Diseño y construcción de instalaciones eléctricas en baja tensión
+        </span>
+        <div class="icon"><i class="bi bi-lightning-charge"></i></div> <!-- ⚡ Icono de electricidad -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Diseño Luminotécnico -->
+  <div class="col-md-6 mb-3">
+    <div class="service-item" onclick="openModalConstruccion('diseno-luminotecnico')">
+      <div class="pic">
+        <img src="assets/img/facilidadconstruccion30.jpg" class="img-fluid" alt="Diseño Luminotécnico">
+      </div>
+      <div class="service-info">
+        <h4 data-lang="es:Diseño Luminotécnico,en:Lighting Design">
+          Diseño Luminotécnico
+        </h4>
+        <span data-lang="es:Estudios y diseño de iluminación interior y exterior.,en:Studies and design of interior and exterior lighting.">
+          Estudios y diseño de iluminación interior y exterior
+        </span>
+        <div class="icon"><i class="bi bi-lightbulb"></i></div> <!-- 💡 Icono de luz -->
+      </div>
+    </div>
+  </div>
+</div>
+
+   </div>
+ </div>
+
+
+
+  
+
 </section>
 
-<!-- Estilos Personalizados -->
-<style>
-  .service-box {
-    display: block;
-    position: relative;
-    overflow: hidden;
-    text-decoration: none;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .service-box:hover {
-    transform: scale(1.05);
-  }
 
-  .service-image {
-    width: 100%;
-    height: 180px;
-    background-size: cover;
-    background-position: center;
-  }
+</section>
+<section id="stats" class="stats section light-background">
+    
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-  .service-content {
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.8);
-    text-align: center;
-    color: white;
-    position: relative;
-  }
+    <div class="row gy-4 text-center">
 
-  .service-content .icon {
-    font-size: 40px;
-    margin-bottom: 10px;
-    display: block;
-  }
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item w-100 h-100">
+          <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+          <p data-lang="es:Años de Experiencia,en:Years of Experience">
+            <strong>Años de Experiencia</strong>
+          </p>
+        </div>
+      </div><!-- End Stats Item -->
 
-  .service-content h4 {
-    font-size: 20px;
-    margin: 0;
-  }
-</style>
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item w-100 h-100">
+          <span data-purecounter-start="0" data-purecounter-end="7000" data-purecounter-duration="1" class="purecounter"></span>
+          <p data-lang="es:Proyectos Concluidos,en:Completed Projects">
+            <strong>Proyectos Concluidos</strong>
+          </p>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item w-100 h-100">
+          <span data-purecounter-start="0" data-purecounter-end="98" data-purecounter-duration="1" class="purecounter"></span>
+          <p data-lang="es:Satisfacción de Clientes (%),en:Customer Satisfaction (%)">
+            <strong>Satisfacción de Clientes (%)</strong>
+          </p>
+        </div>
+      </div><!-- End Stats Item -->
+      
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item w-100 h-100">
+          <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter"></span>
+          <p data-lang="es:Tiempo de Respuesta (Horas),en:Response Time (Hours)">
+            <strong>Tiempo de Respuesta (Horas)</strong>
+          </p>
+        </div>
+      </div><!-- End Stats Item -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Stats Section -->
+
 
 
 <!-- Sección de Nuestro Trabajo -->
@@ -310,8 +770,10 @@
 
   <!-- Título de la Sección -->
   <div class="container section-title" data-aos="fade-up">
-    <h2>Nuestro Trabajo</h2>
-    <p>Conoce nuestros proyectos y servicios en acción</p>
+    <h2 data-lang="es:Nuestro Trabajo,en:Our Work">Nuestro Trabajo</h2>
+    <p data-lang="es:Conoce nuestros proyectos y servicios en acción,en:Discover our projects and services in action">
+      Conoce nuestros proyectos y servicios en acción
+    </p>
   </div>
 
   <div class="container">
@@ -320,9 +782,9 @@
 
       <!-- Filtros (Para mostrar Servicios Petroleros o Construcción) -->
       <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-        <li data-filter="*" class="filter-active">Todos</li>
-        <li data-filter=".filter-petroleros">Servicios Petroleros</li>
-        <li data-filter=".filter-construccion">Construcción</li>
+        <li data-filter="*" class="filter-active" data-lang="es:Todos,en:All">Todos</li>
+        <li data-filter=".filter-petroleros" data-lang="es:Servicios Petroleros,en:Oil Services">Servicios Petroleros</li>
+        <li data-filter=".filter-construccion" data-lang="es:Construcción,en:Construction">Construcción</li>
       </ul><!-- Fin de Filtros -->
 
       <!-- Contenedor de Imágenes -->
@@ -332,8 +794,8 @@
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-petroleros">
           <img src="assets/img/petroleos-3.jpg" class="img-fluid" alt="Instalación de Cable Electrosumergible">
           <div class="portfolio-info">
-            <h4>Instalación de Cable Electrosumergible</h4>
-            <p>Garantizando seguridad y eficiencia.</p>
+            <h4 data-lang="es:Instalación de Cable Electrosumergible,en:Submersible Cable Installation">Instalación de Cable Electrosumergible</h4>
+            <p data-lang="es:Garantizando seguridad y eficiencia,en:Ensuring safety and efficiency">Garantizando seguridad y eficiencia.</p>
             <a href="assets/img/petroleos-3.jpg" title="Instalación de Cable Electrosumergible" data-gallery="portfolio-gallery-petroleros" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
           </div>
         </div><!-- Fin de Item -->
@@ -342,8 +804,8 @@
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-petroleros">
           <img src="assets/img/serv22.jpg" class="img-fluid" alt="Enrollado de Cable con Spooler">
           <div class="portfolio-info">
-            <h4>Enrollado de Cable con Spooler</h4>
-            <p>Optimización de instalación y recuperación de cable.</p>
+            <h4 data-lang="es:Enrollado de Cable con Spooler,en:Cable Spooling">Enrollado de Cable con Spooler</h4>
+            <p data-lang="es:Optimización de instalación y recuperación de cable,en:Optimization of installation and cable recovery">Optimización de instalación y recuperación de cable.</p>
             <a href="assets/img/serv22.jpg" title="Enrollado de Cable con Spooler" data-gallery="portfolio-gallery-petroleros" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
           </div>
         </div><!-- Fin de Item -->
@@ -352,8 +814,8 @@
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-petroleros">
           <img src="assets/img/serv30.jpg" class="img-fluid" alt="Manejo y Transporte de Cable">
           <div class="portfolio-info">
-            <h4>Manejo y Transporte de Cable</h4>
-            <p>Procesos seguros y eficientes en cada operación.</p>
+            <h4 data-lang="es:Manejo y Transporte de Cable,en:Cable Handling and Transport">Manejo y Transporte de Cable</h4>
+            <p data-lang="es:Procesos seguros y eficientes en cada operación,en:Safe and efficient processes in every operation">Procesos seguros y eficientes en cada operación.</p>
             <a href="assets/img/serv30.jpg" title="Manejo y Transporte de Cable" data-gallery="portfolio-gallery-petroleros" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
           </div>
         </div><!-- Fin de Item -->
@@ -362,8 +824,8 @@
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-construccion">
           <img src="assets/img/serv28.jpg" class="img-fluid" alt="Edificaciones Terminadas">
           <div class="portfolio-info">
-            <h4>Edificaciones</h4>
-            <p>Construcción de espacios funcionales y modernos.</p>
+            <h4 data-lang="es:Edificaciones,en:Buildings">Edificaciones</h4>
+            <p data-lang="es:Construcción de espacios funcionales y modernos,en:Construction of functional and modern spaces">Construcción de espacios funcionales y modernos.</p>
             <a href="assets/img/serv28.jpg" title="Edificaciones" data-gallery="portfolio-gallery-construccion" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
           </div>
         </div><!-- Fin de Item -->
@@ -372,8 +834,8 @@
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-construccion">
           <img src="assets/img/serv29.jpg" class="img-fluid" alt="Arquitectos en Planificación">
           <div class="portfolio-info">
-            <h4>Planificación de Proyectos</h4>
-            <p>Arquitectos e ingenieros supervisando cada detalle.</p>
+            <h4 data-lang="es:Planificación de Proyectos,en:Project Planning">Planificación de Proyectos</h4>
+            <p data-lang="es:Arquitectos e ingenieros supervisando cada detalle,en:Architects and engineers supervising every detail">Arquitectos e ingenieros supervisando cada detalle.</p>
             <a href="assets/img/serv29.jpg" title="Planificación de Proyectos" data-gallery="portfolio-gallery-construccion" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
           </div>
         </div><!-- Fin de Item -->
@@ -382,19 +844,86 @@
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-construccion">
           <img src="assets/img/servc2.jpg" class="img-fluid" alt="Obra en Construcción">
           <div class="portfolio-info">
-            <h4>Obra en Construcción</h4>
-            <p>Edificaciones en desarrollo con altos estándares.</p>
+            <h4 data-lang="es:Obra en Construcción,en:Construction Work">Obra en Construcción</h4>
+            <p data-lang="es:Edificaciones en desarrollo con altos estándares,en:Buildings under development with high standards">Edificaciones en desarrollo con altos estándares.</p>
             <a href="assets/img/servc2.jpg" title="Obra en Construcción" data-gallery="portfolio-gallery-construccion" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
           </div>
         </div><!-- Fin de Item -->
 
       </div><!-- Fin de Contenedor de Imágenes -->
 
+      <div class="text-center mt-4" data-aos="fade-up" data-aos-delay="300">
+        <a href="portfolio.html" class="btn-ver-mas" data-lang="es:Ver Más,en:See More">Ver Más</a>
+      </div>
     </div>
 
   </div>
 
 </section><!-- /Sección de Nuestro Trabajo -->
+
+
+<!-- Sección de Trabaja con Nosotros -->
+<!-- Sección de Trabaja con Nosotros -->
+<section id="work-with-us" class="work-with-us section">
+  <div class="container" data-aos="fade-up">
+    <div class="row align-items-center">
+      <!-- Imagen Destacada -->
+      <div class="col-lg-6 mb-3 mb-lg-0 text-center">
+        <img src="assets/img/serv23.jpg" class="img-fluid rounded shadow-lg" alt="Trabaja con Nosotros" style="max-width: 80%; height: auto;">
+      </div>
+      
+      <!-- Contenido y Botón -->
+      <div class="col-lg-6 text-center text-lg-start">
+        <h2 class="section-title" data-lang="es:Únete a Nuestro Equipo,en:Join Our Team">Únete a Nuestro Equipo</h2>
+        <p class="lead" data-lang="es:Únete a una empresa líder en el sector y potencia tu crecimiento profesional. Envíanos tu postulación y desarrolla tu carrera con nosotros, formando parte de un equipo comprometido con la excelencia. ,en:Join a leading company in the industry and enhance your professional growth. Submit your application and develop your career with us, becoming part of a team committed to excellence.">
+          Únete a una empresa líder en el sector y potencia tu crecimiento profesional. Envíanos tu postulación y desarrolla tu carrera con nosotros, formando parte de un equipo comprometido con la excelencia.
+        </p>
+        <button class="btn btn-primary btn-lg mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#jobForm" aria-expanded="false" aria-controls="jobForm" data-lang="es:Postula Aquí,en:Apply Here">
+          Postula Aquí
+        </button>
+      </div>
+    </div>
+
+    <!-- Formulario Oculto -->
+    <div class="collapse mt-4" id="jobForm">
+      <div class="card card-body">
+        <h3 class="text-center" data-lang="es:Formulario de Postulación,en:Application Form">Formulario de Postulación</h3>
+        <form action="submit-form.php" method="post" enctype="multipart/form-data">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="name" class="form-label" data-lang="es:Nombre Completo,en:Full Name">Nombre Completo</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="email" class="form-label" data-lang="es:Correo Electrónico,en:Email Address">Correo Electrónico</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="phone" class="form-label" data-lang="es:Teléfono,en:Phone">Teléfono</label>
+              <input type="tel" class="form-control" id="phone" name="phone" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="cv" class="form-label" data-lang="es:Adjuntar CV (PDF, DOCX),en:Attach Resume (PDF, DOCX)">Adjuntar CV (PDF, DOCX)</label>
+              <input type="file" class="form-control" id="cv" name="cv" accept=".pdf,.docx" required>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label" data-lang="es:Mensaje,en:Message">Mensaje</label>
+            <textarea class="form-control" id="message" name="message" rows="4" placeholder="Cuéntanos por qué te gustaría trabajar con nosotros..." required data-lang="es:Cuéntanos por qué te gustaría trabajar con nosotros...,en:Tell us why you would like to work with us..."></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-success btn-lg" data-lang="es:Enviar Solicitud,en:Submit Application">Enviar Solicitud</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Estilos Personalizados -->
 
 
 
@@ -409,13 +938,17 @@
             <span class="sitename">HLL</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>Km 1, Vía Lago Agrio, Sector Terranova.</p>
-            <p>El Coca, Orellana - Ecuador</p>
-            <p class="mt-3"><strong>Teléfono:</strong> <span>+593 98 800 4208</span></p>
-            <p><strong>E-mail:</strong> <span>herrerallori.cia@servicioshll.com</span></p>
+            <p data-lang="es:Km 3, Vía Lago Agrio, Sector Terranova.,en:Km 3, Vía Lago Agrio, Sector Terranova.">
+              Km 1, Vía Lago Agrio, Sector Terranova.
+            </p>
+            <p data-lang="es:El Coca, Orellana - Ecuador,en:El Coca, Orellana - Ecuador">
+              El Coca, Orellana - Ecuador
+            </p>
+            <p class="mt-3"><strong data-lang="es:Teléfono:,en:Phone:">Teléfono:</strong> <span>+593 98 800 4208</span></p>
+            <p><strong data-lang="es:E-mail:,en:Email:">E-mail:</strong> <span>herrerallori.cia@servicioshll.com</span></p>
           </div>
           <div class="social-links d-flex mt-4">
-            <!-- <a href=""><i class="bi bi-twitter-x"></i></a>-->
+            <!-- <a href=""><i class="bi bi-twitter-x"></i></a> -->
             <a href="https://www.facebook.com/profile.php?id=100069891982623"><i class="bi bi-facebook"></i></a>
             <a href="https://www.instagram.com/herreralloricia/"><i class="bi bi-instagram"></i></a>
             <a href="https://www.linkedin.com/company/herrera-llori-cia-ltda/?originalSubdomain=ec"><i class="bi bi-linkedin"></i></a>
@@ -423,49 +956,54 @@
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Enlaces Útiles</h4>
+          <h4 data-lang="es:Enlaces Útiles,en:Useful Links">Enlaces Útiles</h4>
           <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="about.html">Sobre Nosotros</a></li>
-            <li><a href="services.html">Servicios</a></li>
-            <li><a href="políticassig.html">Políticas</a></li>
-
+            <li><a href="index.html" data-lang="es:Inicio,en:Home">Inicio</a></li>
+            <li><a href="about.html" data-lang="es:Sobre Nosotros,en:About Us">Sobre Nosotros</a></li>
+            <li><a href="services.html" data-lang="es:Servicios,en:Services">Servicios</a></li>
+            <li><a href="políticassig.html" data-lang="es:Políticas,en:Policies">Políticas</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Horario de Atención</h4>
+          <h4 data-lang="es:Horario de Atención,en:Business Hours">Horario de Atención</h4>
           <ul>
-            <li><strong>Lunes - Viernes:</strong> 08:00 - 18:00</li>
-            <li><strong>Sábados:</strong> 09:00 - 13:00</li>
-            <li><strong>Domingos:</strong> Cerrado</li>
+            <li><strong data-lang="es:Lunes - Viernes:,en:Monday - Friday:">Lunes - Viernes:</strong> 08:00 - 18:00</li>
+            <li><strong data-lang="es:Sábados:,en:Saturdays:">Sábados:</strong> 09:00 - 13:00</li>
+            <li><strong data-lang="es:Domingos:,en:Sundays:">Domingos:</strong> <span data-lang="es:Cerrado,en:Closed">Cerrado</span></li>
           </ul>
         </div>
 
         <div class="col-lg-4 col-md-12 footer-newsletter">
-          <h4>Recibe Información Exclusiva</h4>
-          <p>Déjanos tu correo para enviarte actualizaciones sobre nuestros servicios y novedades en la industria.</p>
+          <h4 data-lang="es:Recibe Información Exclusiva,en:Receive Exclusive Information">Recibe Información Exclusiva</h4>
+          <p data-lang="es:Déjanos tu correo para enviarte actualizaciones sobre nuestros servicios y novedades en la industria. ,en:Leave us your email to receive updates on our services and industry news.">
+            Déjanos tu correo para enviarte actualizaciones sobre nuestros servicios y novedades en la industria.
+          </p>
           
           <form action="forms/newsletter.php" method="post" class="php-email-form">
             <div class="newsletter-form">
-              <input type="email" name="email" placeholder="Ingresa tu correo" required>
-              <input type="submit" value="Enviar">
+              <input type="email" name="email" placeholder="Ingresa tu correo" required data-lang="es:Ingresa tu correo,en:Enter your email">
+              <input type="submit" value="Enviar" data-lang="es:Enviar,en:Send">
             </div>
-            <div class="loading">Cargando...</div>
-            <div class="error-message">Hubo un error. Inténtalo de nuevo.</div>
-            <div class="sent-message">¡Tu correo ha sido registrado! Nos pondremos en contacto contigo.</div>
+            <div class="loading" data-lang="es:Cargando...,en:Loading...">Cargando...</div>
+            <div class="error-message" data-lang="es:Hubo un error. Inténtalo de nuevo.,en:There was an error. Please try again.">
+              Hubo un error. Inténtalo de nuevo.
+            </div>
+            <div class="sent-message" data-lang="es:¡Tu correo ha sido registrado! Nos pondremos en contacto contigo.,
+                                                  en:Your email has been registered! We will contact you soon.">
+              ¡Tu correo ha sido registrado! Nos pondremos en contacto contigo.
+            </div>
           </form>
         </div>
-        
-
       </div>
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span></span> <strong class="px-1 sitename">HLL</strong> <span>Herrera Llori CIA. LTDA.</span></p>
+      <p>© <span></span> <strong class="px-1 sitename">HLL </strong> <span data-lang="es:Herrera Llori CIA. LTDA.,en:Herrera Llori CIA. LTDA.">Herrera Llori CIA. LTDA.</span></p>
     </div>
   
-  </footer>
+</footer>
+
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

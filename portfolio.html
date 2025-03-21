@@ -27,59 +27,80 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Sailor
-  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <link href="assets/css/main2.css" rel="stylesheet">
+
+
+
 </head>
 
-<body class="portfolio-page">
+<body class="index-page">
 
-  <header id="header" class="header d-flex align-items-center sticky-top">
+  <header id="header" class="header d-flex align-items-center justify-content-between sticky-top">
+<!-- Contenedor de botones -->
+<div id="button-container" class="d-flex align-items-center gap-2">
+  <button id="language-toggle" class="language-toggle btn btn-light p-2">
+    <i class="bi bi-globe"></i> <span id="language-text">ES</span>
+  </button>
+  <button id="theme-toggle" class="theme-toggle btn btn-light p-2">
+    <i id="theme-icon" class="bi bi-moon-fill"></i>
+  </button>
+</div>
+
+
+
+  
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      
+
+
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1 class="sitename d-flex align-items-center">
-          <img src="assets/img/hll.jpeg" alt="Logo HLL" style="max-width: 150px; height: auto; margin-right: 10px;">
-          <span style="font-weight: bold; font-size: 16px; border-bottom: 2px solid red; padding-bottom: 3px;">
-              Líderes Imparables
-          </span>
+            <img src="assets/img/hll2.png" alt="Logo HLL" style="max-width: 150px; height: auto; margin-right: 10px;">
+            <span id="lideres-texto" class="texto-lideres"
+                style="font-size: clamp(12px, 2vw, 18px); font-weight: bold; border-bottom: 2px solid red; padding-bottom: 3px; color: rgb(70, 64, 64);"
+                data-lang="es:Líderes Imparables,en:Unstoppable Leaders">
+                Líderes Imparables
+            </span>
+        
       </h1>
+      
+      
       
             </a>
 
             <nav id="navmenu" class="navmenu">
               <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li class="dropdown"><a href="about.html" class="active"><span>Nosotros</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                    <li><a href="team.html">Equipo de trabajo</a></li>
-                   <!-- <li><a href="testimonials.html">Testimonials</a></li>-->
-                    
-                  </ul>
+                <li><a href="index.html" data-lang="es:Inicio,en:Home">Inicio</a></li>   
+                             
+                <li><a href="about.html" ><span data-lang="es:Nosotros,en:About Us">Nosotros</i></a>
+                  <!--<ul>
+                  <li><a href="team.html" data-lang="es:Equipo de trabajo,en:Team">Equipo de trabajo</a></li>                    
+                  </ul>-->
                 </li>
-                <li class="dropdown"><a href="services.html" class="active"><span>Servicios</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <li class="dropdown"><a href="services.html"  ><span data-lang="es:Servicios,en:Services">Servicios</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                <!-- <li><a href="services.html">Servicios</a></li>-->
                <ul>
-                <li><a href="services.html">Servicio Petroleros</a></li>
-                <li><a href="servicesconstruccion.html">Servicios De Construcción</a></li>
+                <li><a href="services.html" data-lang="es:Servicio Petroleros,en:Oil Services">Servicio Petroleros</a></li>
+                <li><a href="servicesconstruccion.html" data-lang="es:Servicios de Obra Civil,en:Civil Works Services.">Servicios de Obra Civil.</a></li>
+                <li><a href="serviceselectricos.html" data-lang="es:Servicios Electrónicos,en:Electronic Services">Servicios Electrónicos</a></li>
+
                <!-- <li><a href="testimonials.html">Testimonials</a></li>-->
                 
               </ul>
-          <li><a href="portfolio.html">Portafolio</a></li>
-         <!--  <li><a href="pricing.html">Precios</a></li>-->
+          <li><a href="portfolio.html" data-lang="es:Portafolio,en:Portfolio">Portafolio</a></li>
+         <li><a href="políticassig.html" data-lang="es:Políticas,en:Policies">Políticas>Políticas</a></li>
+         <li><a href="noticeshll.html" data-lang="es:Noticias,en:News">Noticias</a></li>
+
          <!-- <li><a href="blog.html">Blog</a></li>-->
           <!-- <li><a href="contact.html">Contacto</a></li>-->
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="contact.html">Contactanos</a>
+      <a class="btn-getstarted" href="contact.html" data-lang="es:Contactanos,en:Contact Us">Contactanos</a>
+
+
 
     </div>
   </header>
@@ -201,13 +222,17 @@
             <span class="sitename">HLL</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>Km 1, Vía Lago Agrio, Sector Terranova.</p>
-            <p>El Coca, Orellana - Ecuador</p>
-            <p class="mt-3"><strong>Teléfono:</strong> <span>+593 98 800 4208</span></p>
-            <p><strong>E-mail:</strong> <span>herrerallori.cia@servicioshll.com</span></p>
+            <p data-lang="es:Km 3, Vía Lago Agrio, Sector Terranova.,en:Km 3, Vía Lago Agrio, Sector Terranova.">
+              Km 1, Vía Lago Agrio, Sector Terranova.
+            </p>
+            <p data-lang="es:El Coca, Orellana - Ecuador,en:El Coca, Orellana - Ecuador">
+              El Coca, Orellana - Ecuador
+            </p>
+            <p class="mt-3"><strong data-lang="es:Teléfono:,en:Phone:">Teléfono:</strong> <span>+593 98 800 4208</span></p>
+            <p><strong data-lang="es:E-mail:,en:Email:">E-mail:</strong> <span>herrerallori.cia@servicioshll.com</span></p>
           </div>
           <div class="social-links d-flex mt-4">
-            <!-- <a href=""><i class="bi bi-twitter-x"></i></a>-->
+            <!-- <a href=""><i class="bi bi-twitter-x"></i></a> -->
             <a href="https://www.facebook.com/profile.php?id=100069891982623"><i class="bi bi-facebook"></i></a>
             <a href="https://www.instagram.com/herreralloricia/"><i class="bi bi-instagram"></i></a>
             <a href="https://www.linkedin.com/company/herrera-llori-cia-ltda/?originalSubdomain=ec"><i class="bi bi-linkedin"></i></a>
@@ -215,47 +240,52 @@
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Enlaces Útiles</h4>
+          <h4 data-lang="es:Enlaces Útiles,en:Useful Links">Enlaces Útiles</h4>
           <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="about.html">Sobre Nosotros</a></li>
-            <li><a href="services.html">Servicios</a></li>
-            <li><a href="políticassig.html">Políticas</a></li>
-
+            <li><a href="index.html" data-lang="es:Inicio,en:Home">Inicio</a></li>
+            <li><a href="about.html" data-lang="es:Sobre Nosotros,en:About Us">Sobre Nosotros</a></li>
+            <li><a href="services.html" data-lang="es:Servicios,en:Services">Servicios</a></li>
+            <li><a href="políticassig.html" data-lang="es:Políticas,en:Policies">Políticas</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Horario de Atención</h4>
+          <h4 data-lang="es:Horario de Atención,en:Business Hours">Horario de Atención</h4>
           <ul>
-            <li><strong>Lunes - Viernes:</strong> 08:00 - 18:00</li>
-            <li><strong>Sábados:</strong> 09:00 - 13:00</li>
-            <li><strong>Domingos:</strong> Cerrado</li>
+            <li><strong data-lang="es:Lunes - Viernes:,en:Monday - Friday:">Lunes - Viernes:</strong> 08:00 - 18:00</li>
+            <li><strong data-lang="es:Sábados:,en:Saturdays:">Sábados:</strong> 09:00 - 13:00</li>
+            <li><strong data-lang="es:Domingos:,en:Sundays:">Domingos:</strong> <span data-lang="es:Cerrado,en:Closed">Cerrado</span></li>
           </ul>
         </div>
 
         <div class="col-lg-4 col-md-12 footer-newsletter">
-          <h4>Recibe Información Exclusiva</h4>
-          <p>Déjanos tu correo para enviarte actualizaciones sobre nuestros servicios y novedades en la industria.</p>
+          <h4 data-lang="es:Recibe Información Exclusiva,en:Receive Exclusive Information">Recibe Información Exclusiva</h4>
+          <p data-lang="es:Déjanos tu correo para enviarte actualizaciones sobre nuestros servicios y novedades en la industria. ,en:Leave us your email to receive updates on our services and industry news.">
+            Déjanos tu correo para enviarte actualizaciones sobre nuestros servicios y novedades en la industria.
+          </p>
           
           <form action="forms/newsletter.php" method="post" class="php-email-form">
             <div class="newsletter-form">
-              <input type="email" name="email" placeholder="Ingresa tu correo" required>
-              <input type="submit" value="Enviar">
+              <input type="email" name="email" placeholder="Ingresa tu correo" required data-lang="es:Ingresa tu correo,en:Enter your email">
+              <input type="submit" value="Enviar" data-lang="es:Enviar,en:Send">
             </div>
-            <div class="loading">Cargando...</div>
-            <div class="error-message">Hubo un error. Inténtalo de nuevo.</div>
-            <div class="sent-message">¡Tu correo ha sido registrado! Nos pondremos en contacto contigo.</div>
+            <div class="loading" data-lang="es:Cargando...,en:Loading...">Cargando...</div>
+            <div class="error-message" data-lang="es:Hubo un error. Inténtalo de nuevo.,en:There was an error. Please try again.">
+              Hubo un error. Inténtalo de nuevo.
+            </div>
+            <div class="sent-message" data-lang="es:¡Tu correo ha sido registrado! Nos pondremos en contacto contigo.,
+                                                  en:Your email has been registered! We will contact you soon.">
+              ¡Tu correo ha sido registrado! Nos pondremos en contacto contigo.
+            </div>
           </form>
         </div>
-        
-
       </div>
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span></span> <strong class="px-1 sitename">HLL</strong> <span>Herrera Llori CIA. LTDA.</span></p>
+      <p>© <span></span> <strong class="px-1 sitename">HLL </strong> <span data-lang="es:Herrera Llori CIA. LTDA.,en:Herrera Llori CIA. LTDA.">Herrera Llori CIA. LTDA.</span></p>
     </div>
+  
   
   </footer>
 
