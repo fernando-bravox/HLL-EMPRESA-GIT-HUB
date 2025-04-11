@@ -516,7 +516,7 @@ const modalDescriptions = {
     <button class="btn btn-primary video-btn" onclick="playVideo('reparacion-video', this)">Ver Video</button>
     <div id="reparacion-video" class="video-container" style="display:none;">
       <video controls>
-        <source src="assets/img/acorazvie.mp4" type="video/mp4">
+        <source src="assets/img/acorazvie1.mp4" type="video/mp4">
         Tu navegador no soporta videos HTML5.
       </video>
     </div>
@@ -533,7 +533,7 @@ const modalDescriptions = {
     <button class="btn btn-primary video-btn" onclick="playVideo('reparacion-video', this)">Watch Video</button>
     <div id="reparacion-video" class="video-container" style="display:none;">
       <video controls>
-        <source src="assets/img/acorazvie.mp4" type="video/mp4">
+        <source src="assets/img/acorazvie1.mp4" type="video/mp4">
         Your browser does not support HTML5 videos.
       </video>
     </div>
@@ -793,7 +793,7 @@ const modalDescriptionsConstruccion = {
 
   <div id="electricas-video" class="video-container" style="display:none;">
     <video controls>
-      <source src="assets/img/vidfacilidades4.mp4" type="video/mp4">
+      <source src="assets/img/diseño.mp4" type="video/mp4">
       Tu navegador no soporta videos HTML5.
     </video>
   </div>`,
@@ -808,7 +808,7 @@ const modalDescriptionsConstruccion = {
 
   <div id="electricas-video" class="video-container" style="display:none;">
     <video controls>
-      <source src="assets/img/vidfacilidades4.mp4" type="video/mp4">
+      <source src="assets/img/diseño.mp4" type="video/mp4">
       Your browser does not support HTML5 videos.
     </video>
   </div>`
@@ -890,7 +890,7 @@ const modalDescriptionsConstruccion = {
 
   <div id="instalaciones-electricas-video" class="video-container" style="display:none;">
     <video controls>
-      <source src="assets/img/vid_instalaciones.mp4" type="video/mp4">
+      <source src="assets/img/vid_luminotecnico.mp4" type="video/mp4">
       Tu navegador no soporta videos HTML5.
     </video>
   </div>`,
@@ -907,7 +907,7 @@ const modalDescriptionsConstruccion = {
 
   <div id="instalaciones-electricas-video" class="video-container" style="display:none;">
     <video controls>
-      <source src="assets/img/vid_instalaciones.mp4" type="video/mp4">
+      <source src="assets/img/vid_luminotecnico.mp4" type="video/mp4">
       Your browser does not support HTML5 videos.
     </video>
   </div>`
