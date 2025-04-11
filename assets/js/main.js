@@ -278,78 +278,58 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
   const langToggle = document.getElementById("language-toggle");
   const langText = document.getElementById("language-text");
-  let currentLang = "es"; // Idioma predeterminado
+  const defaultLang = "es";
 
-  // Función para cambiar el idioma
-  function toggleLanguage() {
-    currentLang = currentLang === "es" ? "en" : "es";
-    langText.textContent = currentLang.toUpperCase();
-    localStorage.setItem("selectedLanguage", currentLang);
+  // Cargar idioma actual desde localStorage o español por defecto
+  let currentLang = localStorage.getItem("selectedLanguage") || defaultLang;
 
-    // Cambiar todos los textos con data-lang
+  // Función única para actualizar todos los textos traducibles
+  function updateText(lang) {
     document.querySelectorAll("[data-lang]").forEach((element) => {
+      let translations = element.getAttribute("data-lang");
+      if (translations) {
         try {
-            let translations = element.getAttribute("data-lang");
-            if (translations) {
-                const langOptions = Object.fromEntries(
-                    translations.split(/,(?=[a-z]{2}:)/).map((pair) => pair.split(":"))
-                );
-                element.innerHTML = langOptions[currentLang] || element.innerHTML;
-            }
-        } catch (error) {
-            console.error("Error al procesar data-lang:", error);
+          translations = JSON.parse(translations);
+        } catch {
+          translations = Object.fromEntries(
+            translations.split(/,(?=[a-z]{2}:)/).map(pair => pair.split(":"))
+          );
         }
-    });
-
-
-    // Guardar preferencia en localStorage
-    localStorage.setItem("selectedLanguage", currentLang);
-  }
-
-  // Comprobar si hay un idioma guardado en localStorage
-  const savedLang = localStorage.getItem("selectedLanguage");
-  if (savedLang) {
-    currentLang = savedLang;
-    langText.textContent = currentLang.toUpperCase();
-    toggleLanguage(); // Aplicar idioma guardado
-  }
-
-  // Evento para cambiar idioma al hacer clic en el botón
-  langToggle.addEventListener("click", toggleLanguage);
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  const langToggle = document.getElementById("language-toggle");
-  const langText = document.getElementById("language-text");
-  let currentLang = localStorage.getItem("selectedLanguage") || "es"; // Obtener el idioma guardado o español por defecto
-
-  function updateText() {
-    document.querySelectorAll("[data-lang]").forEach((element) => {
-      try {
-        let translations = JSON.parse(element.getAttribute("data-lang"));
-        if (translations[currentLang]) {
-          element.innerHTML = translations[currentLang];
+        if (translations[lang]) {
+          element.innerHTML = translations[lang];
         }
-      } catch (error) {
-        console.error("Error parsing JSON for", element, error);
       }
     });
+    if (langText) langText.textContent = lang.toUpperCase();
   }
 
+  // Cambiar idioma y sincronizar con todas las pestañas
   function toggleLanguage() {
     currentLang = currentLang === "es" ? "en" : "es";
-    langText.textContent = currentLang.toUpperCase();
     localStorage.setItem("selectedLanguage", currentLang);
-    updateText();
+    localStorage.setItem("languageChanged", Date.now());
+    updateText(currentLang);
   }
 
-  // Aplicar idioma guardado en localStorage al cargar la página
-  updateText();
-  langText.textContent = currentLang.toUpperCase();
-  langToggle.addEventListener("click", toggleLanguage);
+  // Detectar cambios de idioma desde otras pestañas
+  window.addEventListener("storage", (event) => {
+    if (event.key === "languageChanged") {
+      const newLang = localStorage.getItem("selectedLanguage") || defaultLang;
+      if (newLang !== currentLang) {
+        currentLang = newLang;
+        updateText(currentLang);
+      }
+    }
+  });
+
+  // Inicializa el idioma al cargar la página
+  updateText(currentLang);
+
+  // Evento del botón para cambiar idioma
+  if (langToggle) langToggle.addEventListener("click", toggleLanguage);
 });
 
 
@@ -529,7 +509,7 @@ const modalDescriptions = {
       <ul>
         <li>✔️ Inspección visual completa y pruebas eléctricas avanzadas.</li>
         <li>✔️ Capacidad de inspeccionar hasta 30,000 ft de cable en la base de HLL.</li>
-        <li>✔️ 8 líneas operativas con motores de combustión y eléctricos.</li>
+        <li>✔️ Contamos con líneas operativas con motores de combustión y eléctricos.</li>
         <li>✔️ Equipos eléctricos certificados por SAE y ARCERNNR.</li>
         <li>✔️ Contadores digitales y análogos con certificación INEN.</li>
       </ul>
@@ -546,7 +526,7 @@ const modalDescriptions = {
       <ul>
         <li>✔️ Complete visual inspection and advanced electrical tests.</li>
         <li>✔️ Capacity to inspect up to 30,000 ft of cable at HLL's base.</li>
-        <li>✔️ 8 operational lines with combustion and electric engines.</li>
+        <li>✔️ We have operational lines with combustion and electric engines.</li>
         <li>✔️ Certified electrical equipment by SAE and ARCERNNR.</li>
         <li>✔️ Digital and analog meters with INEN certification.</li>
       </ul>
@@ -564,7 +544,7 @@ const modalDescriptions = {
       <p>💡 <strong>Reforzamos cables para resistir condiciones extremas.</strong></p>
       <ul>
         <li>✔️ Capacidad de acorazar y reparar hasta 4,000 ft de cable por día en la base de HLL.</li>
-        <li>✔️ Taller equipado con máquina de acorazado MANTAI y puente grúa de 16 toneladas.</li>
+        <li>✔️ Taller equipado con máquina de acorazado MANTAI y puente grúa de 15 toneladas.</li>
         <li>✔️ 2 líneas dedicadas para el retiro de coraza.</li>
         <li>✔️ Equipos eléctricos certificados por SAE y ARCERNNR.</li>
         <li>✔️ Contadores digitales y análogos con certificación INEN.</li>
@@ -582,7 +562,7 @@ const modalDescriptions = {
       <p>💡 <strong>We reinforce cables to withstand extreme conditions.</strong></p>
       <ul>
         <li>✔️ Capacity to armor and repair up to 4,000 ft of cable per day at HLL's base.</li>
-        <li>✔️ Workshop equipped with MANTAI armoring machine and a 16-ton crane.</li>
+        <li>✔️ Workshop equipped with MANTAI armoring machine and a 15-ton crane.</li>
         <li>✔️ 2 dedicated lines for coraza removal.</li>
         <li>✔️ Certified electrical equipment by SAE and ARCERNNR.</li>
         <li>✔️ Digital and analog meters with INEN certification.</li>

@@ -444,16 +444,19 @@ body.dark-mode .service-info span {
   }
 
   .service-video {
-    width: 100% ;
-    height: 365px; /* Ajuste de altura */
+    width: 80%;
+    height: 365px;
     overflow: hidden;
     border-radius: 8px 8px 0 0;
     display: flex;
     align-items: center;
     justify-content: center;
+  
+    margin: 0 auto; /* 👉 centra horizontalmente */
   }
+  
   .service-video video {
-  width: 100%;
+  width: 80%;
   height: 100%;
   object-fit: cover;
   object-position: 50% 30%; /* Baja un poco el encuadre del video */
@@ -558,7 +561,7 @@ body.dark-mode .service-info span {
 .mision-box, .vision-box {
   flex: 1;
   min-width: 300px;
-  max-width: 500px;
+  max-width: 450px;
   background: rgba(0, 0, 0, 0.705);
   backdrop-filter: blur(8px);
   padding: 25px;
@@ -611,7 +614,7 @@ body.dark-mode .service-info span {
 /* 🔹 Diseño Inicial: Icono + Texto */
 .mision-box, .vision-box {
   width: 120px;
-  height: 120px;
+  height: 115px;
   background: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(8px);
   border-radius: 15px;
@@ -630,7 +633,7 @@ body.dark-mode .service-info span {
 
 /* 🔹 Expansión al hacer clic */
 .mision-box.active, .vision-box.active {
-  width: 350px;
+  width: 35px;
   height: auto;
   backdrop-filter: none !important; /* 🔹 Quitar el blur al expandirse */
 
@@ -883,7 +886,6 @@ body.dark-mode .work-with-us {
   .boton-categoria {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 10px;
     padding: 12px 18px;
     border-radius: 10px;
@@ -897,18 +899,25 @@ body.dark-mode .work-with-us {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     min-width: 250px;
     max-width: 300px;
-    text-align: center;
-  }
-  
-  .boton-categoria i {
+    text-align: left; /* Alineamos el texto a la izquierda */
+}
+
+.boton-categoria i {
     font-size: 20px;
-  }
-  
-  .boton-categoria:hover {
+}
+
+.boton-categoria .imagen-boton {
+    width: 40px; /* Ajustamos el tamaño de la imagen */
+    height: auto;
+    border-radius: 5px; /* Redondeamos la imagen para que se vea bien */
+}
+
+.boton-categoria:hover {
     transform: scale(1.05);
     background: linear-gradient(135deg, rgba(226, 4, 4, 0.219), rgba(255, 38, 0, 0.315));
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
-  }
+}
+
   
   /* Habilitar desplazamiento suave */
 html {
@@ -1068,4 +1077,60 @@ body.dark-mode .sostenibilidad-icon-unique {
   .sostenibilidad-row-unique {
       flex-direction: column; /* En pantallas muy pequeñas, las tarjetas se ponen en columna */
   }
+}
+.animar-servicio {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+  transition: max-height 0.7s ease, opacity 0.5s ease, padding 0.5s ease, margin 0.5s ease;
+}
+
+.animar-servicio.visible {
+  max-height: 2000px; /* lo suficientemente grande para cubrir todo */
+  opacity: 1;
+  padding: 20px 0; /* recuperamos espacio al mostrar */
+  margin: 20px 0;
+}
+
+
+
+/* Eliminar espacio adicional entre secciones */
+#service-categories, .contenedor-servicios-petroleros, .contenedor-servicios-construccion, .contenedor-servicios-electricos {
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* Asegurarse que no haya espacio adicional en los contenedores */
+#service-categories .container, .botones-categorias {
+  margin-bottom: 0;  /* Eliminar margen en la parte inferior */
+}
+
+/* Espaciado ajustado entre botones de categorías */
+.botones-categorias {
+  margin-top: 0;
+  margin-bottom: 0;
+  gap: 20px; /* Ajusta el espacio entre los botones */
+  display: flex;
+  justify-content: center;
+}
+
+
+
+/* Eliminar margenes de la sección general */
+.contenedor-servicios-petroleros, .contenedor-servicios-construccion, .contenedor-servicios-electricos {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+/* Añadir un espacio debajo del botón */
+.mt-2 {
+  margin-top: 20px !important; /* Ajusta este valor según el espacio que necesites */
+}
+
+/* Ajustar los márgenes entre el botón y el contenedor */
+.service-box {
+  margin-bottom: 20px !important; /* Esto dará un pequeño espacio debajo del botón */
 }
