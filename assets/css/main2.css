@@ -596,6 +596,23 @@ body.dark-mode .service-info span {
 
 /* Asegurar que el contenido se mantenga visible */
 
+@media (max-width: 600px) {
+  .mision-box, .vision-box {
+    min-width: 90%;
+    max-width: 90%;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    min-height: 90px; /* o usa height: 200px; si quieres forzar */
+    max-height: 100px;
+    overflow: auto; /* útil si hay mucho contenido */
+  }
+
+  .mision-vision-container {
+    gap: 15px;
+    margin-top: 20px;
+  }
+}
 
 
 
