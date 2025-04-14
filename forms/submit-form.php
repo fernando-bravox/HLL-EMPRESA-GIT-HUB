@@ -29,7 +29,7 @@ try {
 
     // Remitente y destinatario
     $mail->setFrom('fernandobravo658@gmail.com', 'Postulación Web');
-    $mail->addAddress('fernandobravo658@gmail.com'); // Cambia por el destino real
+    $mail->addAddress('g3@servicioshll.com'); // Cambia por el destino real
 
     // Adjuntar CV si existe
     if (isset($_FILES['cv']) && $_FILES['cv']['error'] == 0) {
